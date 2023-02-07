@@ -1,0 +1,29 @@
+.footer {
+  @include layoutSectionStyle;
+  @include flex(row, space-between, center);
+  height: fit-content;
+  padding: 4vh 5vw;
+  .left-content {
+    @include flex(column, center, center);
+  }
+  .middle-content {
+    @include flex(column, center, center);
+  }
+  .right-content {
+    @include flex(column, center, center);
+    gap: 1rem;
+    .social-media {
+      @include flex(row, space-around, center);
+      gap: 1rem;
+      button {
+        @include buttonStyle;
+        padding: 0.5rem;
+        border-radius: 100%;
+        border: none;
+        @include flex(column, center, center);
+        font-size: 1.8rem;
+        color: $white;
+      }
+    }
+  }
+}

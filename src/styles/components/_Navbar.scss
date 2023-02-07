@@ -1,0 +1,21 @@
+.navbar {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  @include layoutSectionStyle;
+  height: 10vh;
+  @include flex(row, space-between, center);
+  .logo {
+    img {
+    }
+  }
+  .links {
+    @include flex(row, space-between, center);
+    gap: 1rem;
+    list-style: none;
+    a {
+      @include linkStyle;
+      color: $white;
+    }
+  }
+}

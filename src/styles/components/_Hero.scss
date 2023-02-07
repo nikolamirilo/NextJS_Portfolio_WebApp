@@ -1,0 +1,50 @@
+.hero {
+  @include backgroundObjectImage(100%, 90vh);
+  color: $white;
+  @include contentPadding;
+  @include flex(row, flex-start, center);
+  @include media($md) {
+    @include flex(row, center, center);
+    width: 100%;
+  }
+  .hero-content {
+    position: relative;
+    bottom: 5vh;
+    @include flex(column, center, center);
+    width: 50%;
+    gap: 2vh;
+    @include media($md) {
+      @include flex(column, center, center);
+      width: 100%;
+    }
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      width: 100%;
+    }
+    h2 {
+      font-size: $linkFS;
+      width: 80%;
+      text-align: center;
+      font-weight: 500;
+    }
+    .hero-buttons {
+      @include flex(row, center, center);
+      margin-top: 3vh;
+      gap: 1rem;
+      button {
+        @include buttonStyle;
+        padding: 0.6rem 3rem;
+        color: $white;
+        border: none;
+        &:last-child {
+          background-color: transparent;
+          border: 1px solid $secondary;
+          &:hover {
+            background-color: $secondary;
+          }
+        }
+      }
+    }
+  }
+}

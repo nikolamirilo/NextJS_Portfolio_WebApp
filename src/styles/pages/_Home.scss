@@ -1,0 +1,10 @@
+.home {
+  width: 100%;
+  .cards-container {
+    @include contentPadding;
+    @include flex(row, space-evenly, center);
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 5vh;
+  }
+}
