@@ -33,6 +33,9 @@
   padding: 0 5vw;
   background-color: $primary;
   color: $white;
+  @include media($xs) {
+    padding: 0 4vw;
+  }
 }
 @mixin media($breakpoint) {
   @media screen and (max-width: $breakpoint) {

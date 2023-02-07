@@ -3,6 +3,11 @@
   @include flex(row, space-between, center);
   height: fit-content;
   padding: 4vh 5vw;
+  @include media($sm) {
+    @include flex(column, center, center);
+    gap: 4vh;
+    padding: 6vh 0vw;
+  }
   .left-content {
     @include flex(column, center, center);
   }

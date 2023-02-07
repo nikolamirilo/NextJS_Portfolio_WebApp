@@ -1,5 +1,5 @@
 .hero {
-  @include backgroundObjectImage(100%, 90vh);
+  @include backgroundObjectImage(100%, 92vh);
   color: $white;
   @include contentPadding;
   @include flex(row, flex-start, center);
