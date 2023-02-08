@@ -21,17 +21,27 @@
       font-size: 3rem;
       text-align: center;
       width: 100%;
+      @include media($xxs) {
+        font-size: 2rem;
+        margin-top: 5vh;
+      }
     }
     h2 {
       font-size: $linkFS;
       width: 80%;
       text-align: center;
       font-weight: 500;
+      @include media($xxs) {
+        font-size: 1.2rem;
+      }
     }
     .hero-buttons {
       @include flex(row, center, center);
       margin-top: 3vh;
       gap: 1rem;
+      @include media($xs) {
+        @include flex(column, center, center);
+      }
       button {
         @include buttonStyle;
         padding: 0.6rem 3rem;

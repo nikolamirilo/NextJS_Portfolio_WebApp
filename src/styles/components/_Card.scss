@@ -5,4 +5,9 @@
   width: fit-content;
   padding: 5px;
   border-radius: 10px;
+  @include media($xs) {
+    img {
+      width: 90vw;
+    }
+  }
 }
