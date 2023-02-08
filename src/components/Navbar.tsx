@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
         <Image src="/images/logo.png" alt="Logo" width={140} height={60} />
       </div>
       <input id="menu-toggle" type="checkbox" />
-      <label className="menu-button-container" for="menu-toggle">
+      <label className="menu-button-container" htmlFor="menu-toggle">
         <div className="menu-button"></div>
       </label>
       <div className="links">
