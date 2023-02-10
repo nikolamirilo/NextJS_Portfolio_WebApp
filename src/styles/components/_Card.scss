@@ -3,8 +3,12 @@
   background-color: #fafafa;
   gap: 0.5rem;
   width: fit-content;
-  padding: 5px;
   border-radius: 10px;
+  padding-bottom: 0.5rem;
+  @include boxShadow;
+  img {
+    border-radius: 10px;
+  }
   @include media($xs) {
     img {
       width: 90vw;

@@ -1,12 +1,6 @@
 .home {
   width: 100%;
   .cards-container {
-    @include contentPadding;
-    @include flex(row, space-evenly, center);
-    gap: 1.5%;
-    flex-wrap: wrap;
-    background-color: #030303;
-    width: 100%;
-    row-gap: 5vh;
+    @include cardsContainerStyle;
   }
 }

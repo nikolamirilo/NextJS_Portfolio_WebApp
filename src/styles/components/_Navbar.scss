@@ -19,6 +19,9 @@
   overflow: hidden;
   @include linkStyle;
   color: $white;
+  &:hover {
+    color: $secondary;
+  }
 }
 
 .menu-button-container {

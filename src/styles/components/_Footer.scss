@@ -13,10 +13,26 @@
   }
   .middle-content {
     @include flex(column, center, center);
+    gap: 2vh;
+    .email,
+    .phone {
+      @include flex(column, center, center);
+      gap: 0.5vh;
+      a {
+        color: $secondary;
+        font-size: $linkFS;
+      }
+      label {
+        font-size: $linkFS;
+      }
+    }
   }
   .right-content {
     @include flex(column, center, center);
     gap: 1rem;
+    p {
+      font-size: $linkFS;
+    }
     .social-media {
       @include flex(row, space-around, center);
       gap: 1rem;

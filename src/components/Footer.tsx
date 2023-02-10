@@ -11,14 +11,18 @@ const Footer: React.FC = () => {
         <Image src="/images/logo.png" alt="Logo" width={140} height={60} />
       </div>
       <div className="middle-content">
-        <label htmlFor="email">Email:</label>
-        <Link href="mailto:nikolamirilo@gmail.com" id="email">
-          nikolamirilo@gmail.com
-        </Link>
-        <label htmlFor="phone">Phone:</label>
-        <Link href="tel:+381 60 42 78 175" id="phone">
-          +381 60 427 8175
-        </Link>
+        <div className="email">
+          <label htmlFor="email">Email:</label>
+          <Link href="mailto:nikolamirilo@gmail.com" id="email">
+            nikolamirilo@gmail.com
+          </Link>
+        </div>
+        <div className="phone">
+          <label htmlFor="phone">Phone:</label>
+          <Link href="tel:+381 60 42 78 175" id="phone">
+            +381 60 427 8175
+          </Link>
+        </div>
       </div>
       <div className="right-content">
         <div className="social-media">

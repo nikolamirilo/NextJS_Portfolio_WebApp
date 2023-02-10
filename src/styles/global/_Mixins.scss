@@ -67,8 +67,15 @@
   animation: slideIn $duration ease-in-out $delay forwards;
 }
 @mixin boxShadow {
-  border-radius: 10px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25), 0 0px 20px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+@mixin cardsContainerStyle {
+  @include contentPadding;
+  @include flex(row, space-evenly, center);
+  gap: 1.5%;
+  flex-wrap: wrap;
+  width: 100%;
+  row-gap: 5vh;
 }
 
 @keyframes fade {
