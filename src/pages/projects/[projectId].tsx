@@ -1,15 +1,18 @@
 import Head from "next/head";
 import React from "react";
+import { useRouter } from "next/router";
 
 const SingleProject: React.FC = () => {
+  const router = useRouter();
+  const { query } = router;
+  const id = query.projectId as string;
   return (
     <>
       <Head>
-        <title>Project</title>
+        <title>Swapabee</title>
       </Head>
       <main>
-        <h1>Single Project Page</h1>
-        <div className="cards-container"></div>
+        <h1>Project with Id: {id}</h1>
       </main>
     </>
   );

@@ -18,31 +18,37 @@ const Home: React.FC = () => {
       />
       <div className="cards-container">
         <Card
+          id="1"
           title="Portfolio"
           subtitle="Lorem Ipsum"
           image="https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=2309%2C1154&strip=all"
         />
         <Card
+          id="2"
           title="Portfolio"
           subtitle="Lorem Ipsum"
           image="https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=2309%2C1154&strip=all"
         />
         <Card
+          id="3"
           title="Portfolio"
           subtitle="Lorem Ipsum"
           image="https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=2309%2C1154&strip=all"
         />
         <Card
+          id="4"
           title="Portfolio"
           subtitle="Lorem Ipsum"
           image="https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=2309%2C1154&strip=all"
         />
         <Card
+          id="5"
           title="Portfolio"
           subtitle="Lorem Ipsum"
           image="https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=2309%2C1154&strip=all"
         />
         <Card
+          id="6"
           title="Portfolio"
           subtitle="Lorem Ipsum"
           image="https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=2309%2C1154&strip=all"
