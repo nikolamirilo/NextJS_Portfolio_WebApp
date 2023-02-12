@@ -1,4 +1,4 @@
-import { HeroProps } from "@/types";
+import { HeroProps } from "@/types/components";
 import React from "react";
 
 const Hero: React.FC<HeroProps> = ({ title, subtitle, image }) => {
