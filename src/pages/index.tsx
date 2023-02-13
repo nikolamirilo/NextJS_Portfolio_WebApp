@@ -2,7 +2,6 @@ import { Card, Hero } from "@/components";
 import Head from "next/head";
 import React from "react";
 import clientPromise from "../lib/mongodb";
-import { InferGetServerSidePropsType } from "next";
 
 export async function getServerSideProps(context: any) {
   try {
