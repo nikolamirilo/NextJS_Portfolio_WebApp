@@ -1,20 +1,14 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import { Project } from "@/types/api_responses";
 import type { NextApiRequest, NextApiResponse } from "next";
 
-type Card = {
-  id: string;
-  title: string;
-  link: string;
-  image: string;
-};
-
 type Data = {
-  cards: Card[];
+  projects: Project[];
 };
 
 export default function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
   res.status(200).json({
-    cards: [
+    projects: [
       {
         id: "1",
         title: "Swapabee",
@@ -33,7 +27,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Data>)
         id: "3",
         title: "Arioso Investment AG",
         link: "https://arioso-investment.ch/",
-        image: "https://cdn.britannica.com/15/189715-050-4310222B/Dubai-United-Arab-Emirates-Burj-Khalifa-top.jpg",
+        image:
+          "https://cdn.britannica.com/15/189715-050-4310222B/Dubai-United-Arab-Emirates-Burj-Khalifa-top.jpg",
       },
     ],
   });
