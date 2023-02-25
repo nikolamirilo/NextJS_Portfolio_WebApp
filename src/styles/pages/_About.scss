@@ -1,0 +1,9 @@
+.about {
+  @include pagePadding;
+  h1 {
+    @include color;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}

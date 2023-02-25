@@ -2,6 +2,10 @@
 import { Project } from "@/types/api_responses";
 import type { NextApiRequest, NextApiResponse } from "next";
 
+const uri = process.env.MONGODB_URI;
+
+console.log(uri);
+
 type Data = {
   projects: Project[];
 };
@@ -27,8 +31,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Data>)
         id: "3",
         title: "Arioso Investment AG",
         link: "https://arioso-investment.ch/",
-        image:
-          "https://cdn.britannica.com/15/189715-050-4310222B/Dubai-United-Arab-Emirates-Burj-Khalifa-top.jpg",
+        image: "https://cdn.britannica.com/15/189715-050-4310222B/Dubai-United-Arab-Emirates-Burj-Khalifa-top.jpg",
       },
     ],
   });
