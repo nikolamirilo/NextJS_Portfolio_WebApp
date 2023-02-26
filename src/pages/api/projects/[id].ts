@@ -24,7 +24,8 @@ const projects = [
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === "GET") {
     // Process a GET request - get specific project data
-    res.status(200).json(projects[req.query.id]);
+    const id = Number(req.query.id);
+    res.status(200).json(projects[id]);
   } else if (req.method === "POST") {
     // Process a POST request - add new project
     res.status(200).json("POST request of project " + req.query.id);
