@@ -1,10 +1,7 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import { Project } from "@/types/api_responses";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 const uri = process.env.MONGODB_URI;
-
-console.log(uri);
 
 type Data = {
   projects: Project[];

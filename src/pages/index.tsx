@@ -3,6 +3,7 @@ import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import clientPromise from "../lib/mongodb";
 import axios from "axios";
+import { Project } from "@/types/api_responses";
 
 export async function getStaticProps() {
   const response = await fetch("http://localhost:3000/api/projects");
@@ -15,8 +16,11 @@ export async function getStaticProps() {
   };
 }
 
-const Home: React.FC = ({ projects }) => {
-  console.log(projects);
+interface HomeProps {
+  projects: Project[];
+}
+
+const Home: React.FC<HomeProps> = ({ projects }) => {
   return (
     <main className="home">
       <Head>
@@ -31,17 +35,19 @@ const Home: React.FC = ({ projects }) => {
         image="/images/office.png"
       />
       <div className="cards-container">
-        {projects &&
-          projects.map((project) => {
-            return (
-              <Card
-                key={project.id}
-                title={project.title}
-                image={project.image}
-                subtitle="This is my project, I worked on this project"
-              />
-            );
-          })}
+        {projects
+          ? projects.map((project, idx) => {
+              return (
+                <Card
+                  key={idx}
+                  id={project.id}
+                  title={project.title}
+                  image={project.image}
+                  subtitle="This is my project, I worked on this project"
+                />
+              );
+            })
+          : null}
       </div>
     </main>
   );
