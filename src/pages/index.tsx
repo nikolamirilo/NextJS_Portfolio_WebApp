@@ -1,12 +1,11 @@
 import { Card, Hero } from "@/components";
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
-import clientPromise from "../lib/mongodb";
 import axios from "axios";
 import { Project } from "@/types/api_responses";
 
 export async function getStaticProps() {
-  const response = await fetch("http://localhost:3000/api/projects");
+  const response = await fetch("https://mirilo-nikola.netlify.app/api/projects");
   const data = await response.json();
 
   return {
