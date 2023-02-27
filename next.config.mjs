@@ -13,7 +13,19 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "venturebeat.com",
+        hostname: "play-lh.googleusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: "lp-cms-production.imgix.net",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.britannica.com",
+      },
+      {
+        protocol: "https",
+        hostname: "www.logixshapers.com",
       },
     ],
   },

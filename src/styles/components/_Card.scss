@@ -10,6 +10,12 @@
   img {
     border-radius: 10px;
   }
+  h2 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
   @include media($xs) {
     img {
       width: 90vw;

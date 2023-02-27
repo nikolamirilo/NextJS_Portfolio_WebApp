@@ -1,31 +1,22 @@
 import { Card, Hero } from "@/components";
 import Head from "next/head";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import clientPromise from "../lib/mongodb";
+import axios from "axios";
 
-export async function getServerSideProps(context: any) {
-  try {
-    await clientPromise;
-    // `await clientPromise` will use the default database passed in the MONGODB_URI
-    // However you can use another database (e.g. myDatabase) by replacing the `await clientPromise` with the following code:
-    //
-    // `const client = await clientPromise`
-    // `const db = client.db("myDatabase")`
-    //
-    // Then you can execute queries against your database like so:
-    // db.find({}) or any of the MongoDB Node Driver commands
-    return {
-      props: { isConnected: true },
-    };
-  } catch (e) {
-    console.error(e);
-    return {
-      props: { isConnected: false },
-    };
-  }
+export async function getStaticProps() {
+  const response = await fetch("http://localhost:3000/api/projects");
+  const data = await response.json();
+
+  return {
+    props: {
+      projects: data.projects,
+    },
+  };
 }
 
-const Home: React.FC = () => {
+const Home: React.FC = ({ projects }) => {
+  console.log(projects);
   return (
     <main className="home">
       <Head>
@@ -40,42 +31,17 @@ const Home: React.FC = () => {
         image="/images/office.png"
       />
       <div className="cards-container">
-        <Card
-          id="1"
-          title="Portfolio"
-          subtitle="Lorem Ipsum"
-          image="https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=2309%2C1154&strip=all"
-        />
-        <Card
-          id="2"
-          title="Portfolio"
-          subtitle="Lorem Ipsum"
-          image="https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=2309%2C1154&strip=all"
-        />
-        <Card
-          id="3"
-          title="Portfolio"
-          subtitle="Lorem Ipsum"
-          image="https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=2309%2C1154&strip=all"
-        />
-        <Card
-          id="4"
-          title="Portfolio"
-          subtitle="Lorem Ipsum"
-          image="https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=2309%2C1154&strip=all"
-        />
-        <Card
-          id="5"
-          title="Portfolio"
-          subtitle="Lorem Ipsum"
-          image="https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=2309%2C1154&strip=all"
-        />
-        <Card
-          id="6"
-          title="Portfolio"
-          subtitle="Lorem Ipsum"
-          image="https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=2309%2C1154&strip=all"
-        />
+        {projects &&
+          projects.map((project) => {
+            return (
+              <Card
+                key={project.id}
+                title={project.title}
+                image={project.image}
+                subtitle="This is my project, I worked on this project"
+              />
+            );
+          })}
       </div>
     </main>
   );
