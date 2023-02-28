@@ -1,6 +1,14 @@
 .home {
   width: 100%;
-  .cards-container {
-    @include cardsContainerStyle;
+  #portfolio {
+    @include flex(column, center, center);
+    padding: 5vh 0;
+    h1 {
+      font-size: 2.5rem;
+    }
+    width: 100%;
+    .cards-container {
+      @include cardsContainerStyle;
+    }
   }
 }

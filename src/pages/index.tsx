@@ -32,20 +32,23 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
         subtitle="Utilizing my skills in project management and programming to drive successful results by effective planning and executing projects, delivering on deadlines and goals, and developing customized solutions through programming."
         image="/images/office.png"
       />
-      <div className="cards-container">
-        {projects
-          ? projects.map((project, idx) => {
-              return (
-                <Card
-                  key={idx}
-                  id={project.id}
-                  title={project.title}
-                  image={project.image}
-                  subtitle="This is my project, I worked on this project"
-                />
-              );
-            })
-          : null}
+      <div id="portfolio">
+        <h1>Portfolio</h1>
+        <div className="cards-container" scroll={false}>
+          {projects
+            ? projects.map((project, idx) => {
+                return (
+                  <Card
+                    key={idx}
+                    id={project.id}
+                    title={project.title}
+                    image={project.image}
+                    subtitle="This is my project, I worked on this project"
+                  />
+                );
+              })
+            : null}
+        </div>
       </div>
     </main>
   );
