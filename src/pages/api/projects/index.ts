@@ -28,13 +28,15 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Data>)
         id: "3",
         title: "Arioso Investment AG",
         link: "https://arioso-investment.ch/",
-        image: "https://cdn.britannica.com/15/189715-050-4310222B/Dubai-United-Arab-Emirates-Burj-Khalifa-top.jpg",
+        image:
+          "https://cdn.britannica.com/15/189715-050-4310222B/Dubai-United-Arab-Emirates-Burj-Khalifa-top.jpg",
       },
       {
         id: "4",
         title: "Reactify IT Solutions",
         link: "https://reactify-solutions.com",
-        image: "https://www.logixshapers.com/BlogImages/Pros%20and%20Cons%20of%20React%20JS%20and%20React%20Native.png",
+        image:
+          "https://www.logixshapers.com/BlogImages/Pros%20and%20Cons%20of%20React%20JS%20and%20React%20Native.png",
       },
     ],
   });

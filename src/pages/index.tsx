@@ -1,8 +1,7 @@
 import { Card, Hero } from "@/components";
-import Head from "next/head";
-import React, { useEffect, useState } from "react";
-import axios from "axios";
 import { Project } from "@/types/api_responses";
+import Head from "next/head";
+import React from "react";
 
 export async function getStaticProps() {
   const response = await fetch("https://mirilo-nikola.netlify.app/api/projects");
