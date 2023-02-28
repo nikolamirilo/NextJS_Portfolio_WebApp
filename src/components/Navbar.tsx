@@ -6,7 +6,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <Image src="/images/logo.png" alt="Logo" width={140} height={60} />
+        <Image src="/NM.jpg" alt="Logo" width={80} height={80} style={{ margin: "1vh 0" }} />
       </div>
       <input id="menu-toggle" type="checkbox" />
       <label className="menu-button-container" htmlFor="menu-toggle">

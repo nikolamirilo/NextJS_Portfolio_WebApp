@@ -1,6 +1,6 @@
 import Head from "next/head";
-import React from "react";
 import { useRouter } from "next/router";
+import React from "react";
 
 const SingleProject: React.FC = () => {
   const router = useRouter();
