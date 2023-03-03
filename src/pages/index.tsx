@@ -34,7 +34,7 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
       />
       <div id="portfolio">
         <h1>Portfolio</h1>
-        <div className="cards-container" scroll={false}>
+        <div className="cards-container">
           {projects
             ? projects.map((project, idx) => {
                 return (
