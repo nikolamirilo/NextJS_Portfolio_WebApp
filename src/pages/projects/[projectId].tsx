@@ -25,7 +25,7 @@ const SingleProject: React.FC<SingleProjectProps> = ({ project }) => {
   return (
     <>
       <Head>
-        <title>Swapabee</title>
+        <title>{project.title}</title>
       </Head>
       <main>
         <h1>Project: {project.title}</h1>
