@@ -1,34 +1,17 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import { getDataFromDatabase } from "../index";
 
-const projects = [
-  {
-    id: "1",
-    title: "Swapabee",
-    link: "https://swapabee.ch/",
-    image:
-      "https://play-lh.googleusercontent.com/GmP5XB2gurNFL4kQdNWC6z0fA3kxnj29hveGj9qeEH_a_POhMhCZqayiqM7kgMbXQ8k",
-  },
-  {
-    id: "2",
-    title: "WeBuyInDubai",
-    link: "https://webuyindubai.com/",
-    image:
-      "https://play-lh.googleusercontent.com/GmP5XB2gurNFL4kQdNWC6z0fA3kxnj29hveGj9qeEH_a_POhMhCZqayiqM7kgMbXQ8k",
-  },
-  {
-    id: "3",
-    title: "Arioso Investment AG",
-    link: "https://arioso-investment.ch/",
-    image:
-      "https://cdn.britannica.com/15/189715-050-4310222B/Dubai-United-Arab-Emirates-Burj-Khalifa-top.jpg",
-  },
-];
+type Project = {
+  singleProject: Project;
+};
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === "GET") {
     // Process a GET request - get specific project data
     const id = Number(req.query.id);
-    res.status(200).json(projects[id]);
+    const data = await getDataFromDatabase(id);
+    const singleProject = data.singleProject;
+    res.status(200).json({ singleProject });
   } else if (req.method === "POST") {
     // Process a POST request - add new project
     res.status(200).json("POST request of project " + req.query.id);

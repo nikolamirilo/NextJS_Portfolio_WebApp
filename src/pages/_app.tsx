@@ -1,8 +1,14 @@
 import type { AppProps } from "next/app";
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import "../styles/index.scss";
+import { Loader } from "@/components";
 
 const App = ({ Component, pageProps }: AppProps) => {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 600);
+  });
   return (
     <>
       <Head>
@@ -15,7 +21,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/NM.jpg" />
       </Head>
-      <Component {...pageProps} />
+      {loading ? <Loader /> : <Component {...pageProps} />}
     </>
   );
 };

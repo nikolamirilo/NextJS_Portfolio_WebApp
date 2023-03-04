@@ -1,15 +1,14 @@
 import { Card, Hero } from "@/components";
 import { Project } from "@/types/api_responses";
 import Head from "next/head";
-import React from "react";
+import React, { Suspense } from "react";
 
 export async function getStaticProps() {
-  const response = await fetch("https://mirilo-nikola.netlify.app/api/projects");
+  const response = await fetch(`${process.env.WEB_APP_URL}/api/projects`);
   const data = await response.json();
-
   return {
     props: {
-      projects: data.projects,
+      projects: data.allProjects ? data.allProjects : null,
     },
   };
 }
@@ -34,21 +33,23 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
       />
       <div id="portfolio">
         <h1>Portfolio</h1>
-        <div className="cards-container">
-          {projects
-            ? projects.map((project, idx) => {
-                return (
-                  <Card
-                    key={idx}
-                    id={project.id}
-                    title={project.title}
-                    image={project.image}
-                    subtitle="This is my project, I worked on this project"
-                  />
-                );
-              })
-            : null}
-        </div>
+        <Suspense fallback={<h1>Data Loading...</h1>}>
+          <div className="cards-container">
+            {projects
+              ? projects.map((project, idx) => {
+                  return (
+                    <Card
+                      key={idx}
+                      id={project.id}
+                      title={project.title}
+                      image={project.image}
+                      subtitle="This is my project, I worked on this project"
+                    />
+                  );
+                })
+              : null}
+          </div>
+        </Suspense>
       </div>
     </main>
   );
