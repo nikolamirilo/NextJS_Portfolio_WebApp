@@ -1,0 +1,6 @@
+.single-project {
+  @include flex(column, center, center);
+  width: 100%;
+  min-height: 75vh;
+  height: fit-content;
+}

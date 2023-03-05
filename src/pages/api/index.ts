@@ -1,7 +1,6 @@
 import { Project } from "@/types/api_responses";
 import type { NextApiRequest, NextApiResponse } from "next";
 import clientPromise from "@/lib/mongodb";
-import SingleProject from "./../projects/[projectId]";
 
 export const getDataFromDatabase = async (id: number) => {
   const client = await clientPromise;

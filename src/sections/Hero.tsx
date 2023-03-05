@@ -1,9 +1,9 @@
-import { HeroProps } from "@/types/components";
+import { HeroProps } from "@/types/sections";
 import React from "react";
 
 const Hero: React.FC<HeroProps> = ({ title, subtitle, image }) => {
   return (
-    <div className="hero" style={{ backgroundImage: `url(${image})` }}>
+    <section className="hero" style={{ backgroundImage: `url(${image})` }}>
       <div className="hero-content">
         <h1>{title}</h1>
         <h2>{subtitle}</h2>
@@ -12,7 +12,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, image }) => {
           <button>Pass</button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default Hero;

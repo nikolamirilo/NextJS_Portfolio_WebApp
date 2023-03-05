@@ -1,7 +1,9 @@
-import { Card, Hero } from "@/components";
+import { CardsContainer, Hero } from "@/sections";
 import { Project } from "@/types/api_responses";
+import { HomeProps } from "@/types/pages";
 import Head from "next/head";
 import React, { Suspense } from "react";
+import { Loader } from "@/components";
 
 export async function getStaticProps() {
   const response = await fetch(`${process.env.WEB_APP_URL}/api/projects`);
@@ -11,10 +13,6 @@ export async function getStaticProps() {
       projects: data.allProjects ? data.allProjects : null,
     },
   };
-}
-
-interface HomeProps {
-  projects: Project[];
 }
 
 const Home: React.FC<HomeProps> = ({ projects }) => {
@@ -33,22 +31,8 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
       />
       <div id="portfolio">
         <h1>Portfolio</h1>
-        <Suspense fallback={<h1>Data Loading...</h1>}>
-          <div className="cards-container">
-            {projects
-              ? projects.map((project, idx) => {
-                  return (
-                    <Card
-                      key={idx}
-                      id={project.id}
-                      title={project.title}
-                      image={project.image}
-                      subtitle="This is my project, I worked on this project"
-                    />
-                  );
-                })
-              : null}
-          </div>
+        <Suspense fallback={<Loader />}>
+          <CardsContainer data={projects} />
         </Suspense>
       </div>
     </main>
