@@ -1,4 +1,4 @@
-import { HeroProps } from "@/types/sections";
+import { HeroProps } from "@/typescript/interfaces/sections";
 import React from "react";
 
 const Hero: React.FC<HeroProps> = ({ title, subtitle, image }) => {

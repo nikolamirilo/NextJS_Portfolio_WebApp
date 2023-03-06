@@ -1,4 +1,4 @@
-import { Project } from "./api_responses";
+import { Project } from "../types/types";
 
 export interface CardsContainerProps {
   data: Project[];

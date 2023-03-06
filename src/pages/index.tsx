@@ -1,6 +1,6 @@
 import { Loader } from "@/components";
 import { Hero } from "@/sections";
-import { HomeProps } from "@/types/pages";
+import { HomeProps } from "@/typescript/interfaces/pages";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import React, { Suspense } from "react";

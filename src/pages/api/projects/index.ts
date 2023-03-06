@@ -1,4 +1,4 @@
-import { Project } from "@/types/api_responses";
+import { Project } from "@/typescript/types/types";
 import type { NextApiRequest, NextApiResponse } from "next";
 import { getDataFromDatabase } from "./../index";
 

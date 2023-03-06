@@ -1,6 +1,6 @@
-import React from "react";
-import { CardsContainerProps } from "./../types/sections";
 import { Card } from "@/components";
+import React from "react";
+import { CardsContainerProps } from "../typescript/interfaces/sections";
 
 const CardsContainer: React.FC<CardsContainerProps> = ({ data }) => {
   return (

@@ -1,5 +1,5 @@
 import { Loader } from "@/components";
-import { Project } from "@/types/api_responses";
+import { Project } from "@/typescript/types/types";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,21 +17,19 @@ import React, { Suspense, useEffect, useState } from "react";
 // }
 
 export const getStaticPaths = async () => {
-  return {
-    paths: [
-      { params: { id: "1" } },
-      { params: { id: "2" } },
-      { params: { id: "3" } },
-      { params: { id: "4" } },
-    ], //indicates that no page needs be created at build time
-    fallback: "blocking", //indicates the type of fallback
-  };
+  const response = await fetch(`${process.env.WEB_APP_URL}/api/projects`);
+  const data = await response.json();
+  // Get the paths we want to pre-render based on posts
+  const allProjects: Project[] = data.allProjects;
+  const paths = allProjects.map((item: Project) => ({
+    params: { id: item.id },
+  }));
+  return { paths, fallback: "blocking" };
 };
 
 export const getStaticProps = async (context: any) => {
   const id = context.params.id;
   const response = await fetch(`${process.env.WEB_APP_URL}/api/projects/${id}`);
-
   const data = await response.json();
   return {
     props: {
