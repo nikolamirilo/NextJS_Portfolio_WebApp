@@ -1,9 +1,10 @@
-import { CardsContainer, Hero } from "@/sections";
-import { Project } from "@/types/api_responses";
+import { Loader } from "@/components";
+import { Hero } from "@/sections";
 import { HomeProps } from "@/types/pages";
+import dynamic from "next/dynamic";
 import Head from "next/head";
 import React, { Suspense } from "react";
-import { Loader } from "@/components";
+const CardsContainer = dynamic(() => import("@/sections/CardsContainer"), { suspense: true });
 
 export async function getStaticProps() {
   const response = await fetch(`${process.env.WEB_APP_URL}/api/projects`);

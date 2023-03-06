@@ -6,7 +6,8 @@ const nextConfig = {
     },
   },
   env: {
-    MONGODB_URI: "mongodb+srv://nikolamirilo:veslanje123@cluster0.6kvwzdu.mongodb.net/?retryWrites=true&w=majority",
+    MONGODB_URI:
+      "mongodb+srv://nikolamirilo:veslanje123@cluster0.6kvwzdu.mongodb.net/?retryWrites=true&w=majority",
     WEB_APP_URL: "https://mirilo-nikola.netlify.app",
   },
   images: {

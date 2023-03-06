@@ -6,6 +6,7 @@ type Project = {
 };
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+  res.setHeader("Cache-Control", "s-maxage=10");
   if (req.method === "GET") {
     // Process a GET request - get specific project data
     const id = Number(req.query.id);
