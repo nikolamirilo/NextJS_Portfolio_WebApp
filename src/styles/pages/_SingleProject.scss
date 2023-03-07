@@ -1,6 +1,14 @@
 .single-project {
-  @include flex(column, center, center);
+  @include flex(row, space-around, center);
+  padding: 5vh 5vw;
   width: 100%;
   min-height: 75vh;
   height: fit-content;
+  p {
+    width: 50%;
+  }
+  .content,
+  .image {
+    @include flex(column, center, center);
+  }
 }

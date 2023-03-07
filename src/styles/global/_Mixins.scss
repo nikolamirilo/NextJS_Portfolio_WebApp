@@ -43,6 +43,14 @@
     padding: 0 4vw;
   }
 }
+
+@mixin sectionStyle {
+  width: 100%;
+  padding: 5vh 5vw;
+  @include media($xs) {
+    padding: 5vh 2vw;
+  }
+}
 @mixin media($breakpoint) {
   @media screen and (max-width: $breakpoint) {
     @content;

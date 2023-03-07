@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Navbar: React.FC = () => {
   return (

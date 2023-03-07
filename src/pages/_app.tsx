@@ -7,7 +7,7 @@ import { Loader } from "@/components";
 const App = ({ Component, pageProps }: AppProps) => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setTimeout(() => setLoading(false), 600);
+    setTimeout(() => setLoading(false), 800);
   });
   return (
     <>

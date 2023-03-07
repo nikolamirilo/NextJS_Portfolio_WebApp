@@ -1,6 +1,6 @@
 import { CardProps } from "@/typescript/interfaces/components";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Card: React.FC<CardProps> = ({ id, title, subtitle, image }) => {

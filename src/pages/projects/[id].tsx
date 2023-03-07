@@ -4,7 +4,9 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React, { Suspense, useEffect, useState } from "react";
+import { SingleProjectProps } from "@/typescript/interfaces/pages";
 
+//!SERVER-SIDE RENDERING
 // export async function getServerSideProps(context) {
 //   const id = context.params.id;
 //   const response = await fetch(`${process.env.WEB_APP_URL}/api/projects/${id}`);
@@ -16,6 +18,7 @@ import React, { Suspense, useEffect, useState } from "react";
 //   };
 // }
 
+//!INCREMENTAL STATIC REGENERATION
 export const getStaticPaths = async () => {
   const response = await fetch(`${process.env.WEB_APP_URL}/api/projects`);
   const data = await response.json();
@@ -39,10 +42,6 @@ export const getStaticProps = async (context: any) => {
   };
 };
 
-interface SingleProjectProps {
-  project: Project;
-}
-
 const SingleProject: React.FC<SingleProjectProps> = ({ project }) => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -53,17 +52,22 @@ const SingleProject: React.FC<SingleProjectProps> = ({ project }) => {
       <Head>
         <title>{project.title}</title>
       </Head>
-      <main>
-        {loading ? (
-          <Loader />
-        ) : (
+      {loading ? (
+        <Loader />
+      ) : (
+        <main className="single-project">
           <Suspense fallback={<Loader />}>
-            <h1>Project: {project.title}</h1>
-            <Link href={project.link}>{project.title}</Link>
-            <Image src={project.image} alt={project.title} width={300} height={150} />
+            <div className="image">
+              <Image src={project.image} alt={project.title} width={600} height={300} />
+            </div>
+            <div className="content">
+              <h1>Project: {project.title}</h1>
+              <p>{project.description ? project.description : null}</p>
+              <Link href={project.link}>{project.title}</Link>
+            </div>
           </Suspense>
-        )}
-      </main>
+        </main>
+      )}
     </>
   );
 };

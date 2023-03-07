@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React from "react";
+import { Form } from "@/components";
 
 const Contact: React.FC = () => {
   return (
@@ -7,8 +8,8 @@ const Contact: React.FC = () => {
       <Head>
         <title>Contact</title>
       </Head>
-      <main>
-        <h1>Contact Page</h1>
+      <main className="contact">
+        <Form />
       </main>
     </>
   );
