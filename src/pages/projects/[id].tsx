@@ -1,10 +1,10 @@
 import { Loader } from "@/components";
+import { SingleProjectProps } from "@/typescript/interfaces/pages";
 import { Project } from "@/typescript/types/types";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React, { Suspense, useEffect, useState } from "react";
-import { SingleProjectProps } from "@/typescript/interfaces/pages";
 
 //!SERVER-SIDE RENDERING
 // export async function getServerSideProps(context) {
@@ -38,7 +38,7 @@ export const getStaticProps = async (context: any) => {
     props: {
       project: data.singleProject ? data.singleProject : null,
     },
-    revalidate: 10,
+    revalidate: 60,
   };
 };
 
@@ -58,7 +58,7 @@ const SingleProject: React.FC<SingleProjectProps> = ({ project }) => {
         <main className="single-project">
           <Suspense fallback={<Loader />}>
             <div className="image">
-              <Image src={project.image} alt={project.title} width={600} height={300} />
+              <Image src={project.image} alt={project.title} width={300} height={150} />
             </div>
             <div className="content">
               <h1>Project: {project.title}</h1>

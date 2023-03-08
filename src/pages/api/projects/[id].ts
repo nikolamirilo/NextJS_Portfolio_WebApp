@@ -1,16 +1,12 @@
+import { getSingleProject } from "@/utils/projects";
 import { NextApiRequest, NextApiResponse } from "next";
-import { getDataFromDatabase } from "../index";
-
-type Project = {
-  singleProject: Project;
-};
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   res.setHeader("Cache-Control", "s-maxage=10");
   if (req.method === "GET") {
     // Process a GET request - get specific project data
     const id = Number(req.query.id);
-    const data = await getDataFromDatabase(id);
+    const data = await getSingleProject(id);
     const singleProject = data.singleProject;
     res.status(200).json({ singleProject });
   } else if (req.method === "POST") {

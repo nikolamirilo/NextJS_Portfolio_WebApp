@@ -1,8 +1,8 @@
-import type { AppProps } from "next/app";
-import { useEffect, useState } from "react";
-import Head from "next/head";
-import "../styles/index.scss";
 import { Loader } from "@/components";
+import type { AppProps } from "next/app";
+import Head from "next/head";
+import { useEffect, useState } from "react";
+import "../styles/index.scss";
 
 const App = ({ Component, pageProps }: AppProps) => {
   const [loading, setLoading] = useState(true);
