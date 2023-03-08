@@ -1,10 +1,21 @@
+// import { customWebpackConfig } from "./webpack.config";
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   modularizeImports: {
     "react-icons": {
       transform: "react-icons/{{member}}",
     },
   },
+  // webpack: (config, { isServer }) => {
+  //   if (isServer) {
+  //     config = {
+  //       ...config,
+  //       ...customWebpackConfig,
+  //     };
+  //   }
+  //   return config;
+  // },
   env: {
     MONGODB_URI:
       "mongodb+srv://nikolamirilo:veslanje123@cluster0.6kvwzdu.mongodb.net/?retryWrites=true&w=majority",
