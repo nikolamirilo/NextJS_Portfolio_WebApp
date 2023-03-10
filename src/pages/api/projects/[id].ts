@@ -2,7 +2,7 @@ import { getSingleProject } from "@/utils/projects";
 import { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  res.setHeader("Cache-Control", "s-maxage=10");
+  res.setHeader("Cache-Control", "s-maxage=86400");
   if (req.method === "GET") {
     // Process a GET request - get specific project data
     const id = Number(req.query.id);
