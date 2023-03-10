@@ -23,24 +23,28 @@ function generateSiteMap(projects) {
        <changefreq>weekly</changefreq>
        <priority>0.8</priority>
      </url>
-     ${projects
-       .map(({ id }) => {
-         return `
+     ${
+       projects
+         ? projects.allProjects
+             .map((project) => {
+               return `
        <url>
-           <loc>${`${EXTERNAL_DATA_URL}/${id}`}</loc>
+           <loc>${`${EXTERNAL_DATA_URL}/${project.id}`}</loc>
            <lastmod>${date}</lastmod>
            <changefreq>weekly</changefreq>
            <priority>0.8</priority>
        </url>
      `;
-       })
-       .join("")}
+             })
+             .join("")
+         : null
+     }
    </urlset>
  `;
 }
 
-function SiteMap() {
-  return null;
+function SiteMap({ sitemap }) {
+  return <>{sitemap}</>;
 }
 
 export async function getServerSideProps({ res }) {
@@ -57,7 +61,7 @@ export async function getServerSideProps({ res }) {
   res.end();
 
   return {
-    props: {},
+    props: { sitemap },
   };
 }
 
