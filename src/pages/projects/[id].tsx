@@ -1,5 +1,6 @@
 import { Loader } from "@/components";
 import { SingleProjectProps } from "@/typescript/interfaces/pages";
+import { Project } from "@/typescript/types/types";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
