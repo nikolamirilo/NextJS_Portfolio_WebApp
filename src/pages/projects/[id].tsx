@@ -39,7 +39,7 @@ export const getStaticProps = async (context: any) => {
     props: {
       project: data.singleProject ? data.singleProject : null,
     },
-    revalidate: 60,
+    // revalidate: 60,
   };
 };
 

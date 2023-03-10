@@ -13,7 +13,11 @@
     }
   }
   p {
-    width: 25rem;
+    width: 20rem;
+    @include media($xs) {
+      width: 96%;
+      text-align: center;
+    }
   }
   .image {
     @include backgroundObjectImage(12rem, 12rem);
