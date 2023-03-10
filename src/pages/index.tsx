@@ -1,10 +1,11 @@
 import { Loader } from "@/components";
-import { Hero, Timeline } from "@/sections";
+import { Hero } from "@/sections";
 import { HomeProps } from "@/typescript/interfaces/pages";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import React, { Suspense } from "react";
 const CardsContainer = dynamic(() => import("@/sections/CardsContainer"), { suspense: true });
+const Timeline = dynamic(() => import("@/sections/Timeline"), { suspense: true });
 
 export async function getStaticProps() {
   const response = await fetch(`${process.env.WEB_APP_URL}/api/projects`);
@@ -15,6 +16,7 @@ export async function getStaticProps() {
     },
   };
 }
+
 const Home: React.FC<HomeProps> = ({ projects }) => {
   return (
     <main className="home">
@@ -35,7 +37,9 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
           <CardsContainer data={projects} />
         </Suspense>
       </div>
-      <Timeline />
+      <Suspense fallback={<Loader />}>
+        <Timeline />
+      </Suspense>
     </main>
   );
 };
