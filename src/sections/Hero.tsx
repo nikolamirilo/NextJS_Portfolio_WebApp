@@ -1,4 +1,5 @@
 import { HeroProps } from "@/typescript/interfaces/sections";
+import Link from "next/link";
 import React from "react";
 
 const Hero: React.FC<HeroProps> = ({ title, subtitle, image }) => {
@@ -8,8 +9,8 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, image }) => {
         <h1>{title}</h1>
         <h2>{subtitle}</h2>
         <div className="hero-buttons">
-          <button>Click</button>
-          <button>Pass</button>
+          <Link href="#portfolio">Portfolio</Link>
+          <Link href="#timeline">Timeline</Link>
         </div>
       </div>
     </section>

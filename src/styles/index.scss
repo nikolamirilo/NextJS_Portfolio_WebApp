@@ -12,9 +12,11 @@
 }
 body {
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
   main {
     min-height: 75vh;
     height: fit-content;
+    scroll-behavior: smooth;
   }
 }
 ::selection {

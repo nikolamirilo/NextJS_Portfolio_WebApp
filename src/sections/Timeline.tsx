@@ -1,9 +1,9 @@
-import React from "react";
 import { Node } from "@/components";
+import React from "react";
 
 const Timeline: React.FC = () => {
   return (
-    <div className="timeline">
+    <div id="timeline">
       <Node />
       <Node />
       <Node />

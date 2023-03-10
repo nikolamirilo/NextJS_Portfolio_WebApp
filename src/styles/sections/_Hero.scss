@@ -43,8 +43,9 @@
       @include media($xs) {
         @include flex(column, center, center);
       }
-      button {
+      a {
         @include buttonStyle;
+        text-decoration: none;
         padding: 0.6rem 3rem;
         color: $white;
         border: none;
