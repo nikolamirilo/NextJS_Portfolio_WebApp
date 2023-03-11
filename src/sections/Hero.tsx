@@ -1,10 +1,12 @@
 import { HeroProps } from "@/typescript/interfaces/sections";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const Hero: React.FC<HeroProps> = ({ title, subtitle, image }) => {
   return (
-    <section className="hero" style={{ backgroundImage: `url(${image})` }}>
+    <section className="hero">
+      <Image src={image} layout="fill" alt="Office" objectFit="cover" priority />
       <div className="hero-content">
         <h1>{title}</h1>
         <h2>{subtitle}</h2>

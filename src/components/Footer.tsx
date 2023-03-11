@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <div className="left-content">
-        <Image src="/NM.jpg" alt="Logo" width={80} height={80} />
+        <Image src="/NM.webp" alt="Logo" width={80} height={80} />
       </div>
       <div className="middle-content">
         <div className="email">
