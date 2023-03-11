@@ -1,6 +1,9 @@
 import { Project } from "../types/types";
 
-export interface CardsContainerProps {
+export interface PortfolioProps {
+  data: Project[];
+}
+export interface ServicesProps {
   data: Project[];
 }
 export interface HeroProps {

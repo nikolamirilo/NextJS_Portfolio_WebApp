@@ -7,7 +7,7 @@ import "../styles/index.scss";
 const App = ({ Component, pageProps }: AppProps) => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setTimeout(() => setLoading(false), 800);
+    setTimeout(() => setLoading(false), 1000);
   });
   return (
     <>

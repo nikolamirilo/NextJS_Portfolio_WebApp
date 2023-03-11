@@ -4,20 +4,7 @@ import { Project } from "@/typescript/types/types";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import React, { Suspense, useEffect, useState } from "react";
-
-//!SERVER-SIDE RENDERING
-// export async function getServerSideProps(context: GetServerSidePropsContext) {
-//   const id = context.params?.id;
-//   const response = await fetch(`${process.env.WEB_APP_URL}/api/projects/${id}`);
-//   const data = await response.json();
-//   context.res.setHeader("Cache-Control", "public, s-maxage=10, stale-while-revalidate=59");
-//   return {
-//     props: {
-//       project: data.singleProject ? data.singleProject : null,
-//     },
-//   };
-// }
+import React, { useEffect, useState } from "react";
 
 //!INCREMENTAL STATIC REGENERATION
 export const getStaticPaths = async () => {
@@ -52,7 +39,7 @@ const SingleProject: React.FC<SingleProjectProps> = ({ project }) => {
     "/images/projects/reactifysolutions.webp",
   ];
   useEffect(() => {
-    setTimeout(() => setLoading(false), 600);
+    setTimeout(() => setLoading(false), 1000);
   });
   return (
     <>
@@ -63,34 +50,30 @@ const SingleProject: React.FC<SingleProjectProps> = ({ project }) => {
         <Loader />
       ) : (
         <main className="single-project">
-          <Suspense fallback={<Loader />}>
-            <div className="image">
-              <Image
-                src={
-                  project.id === "1"
-                    ? images[0]
-                    : project.id === "2"
-                    ? images[1]
-                    : project.id === "3"
-                    ? images[2]
-                    : project.id === "4"
-                    ? images[3]
-                    : ""
-                }
-                alt={project.title}
-                width={400}
-                height={200}
-              />
-            </div>
-            <div className="content">
-              <h1>Project: {project.title}</h1>
-              <p>{project.description ? project.description : null}</p>
-              <Link href={project.link}>{project.title}</Link>
-            </div>
-          </Suspense>
+          <div className="image">
+            <Image src={images[Number(project.id) - 1]} alt={project.title} width={400} height={200} />
+          </div>
+          <div className="content">
+            <h1>Project: {project.title}</h1>
+            <p>{project.description ? project.description : null}</p>
+            <Link href={project.link}>{project.title}</Link>
+          </div>
         </main>
       )}
     </>
   );
 };
 export default SingleProject;
+
+//!SERVER-SIDE RENDERING
+// export async function getServerSideProps(context: GetServerSidePropsContext) {
+//   const id = context.params?.id;
+//   const response = await fetch(`${process.env.WEB_APP_URL}/api/projects/${id}`);
+//   const data = await response.json();
+//   context.res.setHeader("Cache-Control", "public, s-maxage=10, stale-while-revalidate=59");
+//   return {
+//     props: {
+//       project: data.singleProject ? data.singleProject : null,
+//     },
+//   };
+// }

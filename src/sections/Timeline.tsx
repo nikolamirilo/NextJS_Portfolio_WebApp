@@ -3,7 +3,7 @@ import React from "react";
 
 const Timeline: React.FC = () => {
   return (
-    <div id="timeline">
+    <section id="timeline">
       <Node />
       <Node />
       <Node />
@@ -11,7 +11,7 @@ const Timeline: React.FC = () => {
       <Node />
       <Node />
       <Node />
-    </div>
+    </section>
   );
 };
 

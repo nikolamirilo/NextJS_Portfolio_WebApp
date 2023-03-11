@@ -4,9 +4,11 @@ import React from "react";
 import Image from "next/image";
 
 const Hero: React.FC<HeroProps> = ({ title, subtitle, image }) => {
+  const blurDataURL =
+    "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTI4IDEyOCIgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiIHZlcnNpb249IjEuMSI+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTAgMGgxMjh2MTI4SDB6Ii8+PC9zdmc+";
   return (
-    <section className="hero">
-      <Image src={image} layout="fill" alt="Office" objectFit="cover" priority />
+    <section id="hero">
+      <Image src={image} alt="Office" fill placeholder="blur" blurDataURL={blurDataURL} priority />
       <div className="hero-content">
         <h1>{title}</h1>
         <h2>{subtitle}</h2>
