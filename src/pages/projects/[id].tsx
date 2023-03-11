@@ -45,6 +45,12 @@ export const getStaticProps = async (context: any) => {
 
 const SingleProject: React.FC<SingleProjectProps> = ({ project }) => {
   const [loading, setLoading] = useState(true);
+  const images = [
+    "/images/projects/swapabee.webp",
+    "/images/projects/webuyindubai.webp",
+    "/images/projects/ariosoinvestment.webp",
+    "/images/projects/reactifysolutions.webp",
+  ];
   useEffect(() => {
     setTimeout(() => setLoading(false), 600);
   });
@@ -59,7 +65,22 @@ const SingleProject: React.FC<SingleProjectProps> = ({ project }) => {
         <main className="single-project">
           <Suspense fallback={<Loader />}>
             <div className="image">
-              <Image src={project.image} alt={project.title} width={300} height={150} />
+              <Image
+                src={
+                  project.id === "1"
+                    ? images[0]
+                    : project.id === "2"
+                    ? images[1]
+                    : project.id === "3"
+                    ? images[2]
+                    : project.id === "4"
+                    ? images[3]
+                    : ""
+                }
+                alt={project.title}
+                width={400}
+                height={200}
+              />
             </div>
             <div className="content">
               <h1>Project: {project.title}</h1>

@@ -3,6 +3,12 @@ import React from "react";
 import { CardsContainerProps } from "../typescript/interfaces/sections";
 
 const CardsContainer: React.FC<CardsContainerProps> = ({ data }) => {
+  const images = [
+    "/images/projects/swapabee.webp",
+    "/images/projects/webuyindubai.webp",
+    "/images/projects/ariosoinvestment.webp",
+    "/images/projects/reactifysolutions.webp",
+  ];
   return (
     <section className="cards-container">
       {data
@@ -12,7 +18,7 @@ const CardsContainer: React.FC<CardsContainerProps> = ({ data }) => {
                 key={idx}
                 id={project.id}
                 title={project.title}
-                image={project.image}
+                image={images[idx]}
                 subtitle="This is my project, I worked on this project"
               />
             );
