@@ -2,12 +2,6 @@ import moment from "moment";
 import Head from "next/head";
 import React from "react";
 
-export async function getStaticProps() {
-  return {
-    props: {},
-  };
-}
-
 const About: React.FC = () => {
   const birthdate = moment("2001-01-05", "YYYY-MM-DD");
   const today = moment();
