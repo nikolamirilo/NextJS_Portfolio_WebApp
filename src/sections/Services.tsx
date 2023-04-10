@@ -1,27 +1,21 @@
-import React from "react";
 import { Card } from "@/components";
 import { ServicesProps } from "@/typescript/interfaces/sections";
+import React from "react";
 
 const Services: React.FC<ServicesProps> = ({ data }) => {
-  const images = [
-    "/images/projects/swapabee.webp",
-    "/images/projects/webuyindubai.webp",
-    "/images/projects/ariosoinvestment.webp",
-    "/images/projects/reactifysolutions.webp",
-  ];
   return (
     <section id="services">
       <h1>Services</h1>
       <div className="cards-container">
         {data
-          ? data.map((project, idx) => {
+          ? data.map((service, idx) => {
               return (
                 <Card
                   key={idx}
-                  id={project.id}
-                  title={project.title}
-                  image={images[idx]}
-                  subtitle="This is my project, I worked on this project"
+                  id={service.id}
+                  title={service.title}
+                  image="/images/services/programming.jpg"
+                  subtitle="This is my service, I worked on this service"
                 />
               );
             })

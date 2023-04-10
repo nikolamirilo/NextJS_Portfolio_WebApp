@@ -51,7 +51,12 @@ const SingleProject: React.FC<SingleProjectProps> = ({ project }) => {
       ) : (
         <main className="single-project">
           <div className="image">
-            <Image src={images[Number(project.id) - 1]} alt={project.title} width={400} height={200} />
+            <Image
+              src={images[Number(project.id) - 1]}
+              alt={project.title}
+              width={400}
+              height={200}
+            />
           </div>
           <div className="content">
             <h1>Project: {project.title}</h1>

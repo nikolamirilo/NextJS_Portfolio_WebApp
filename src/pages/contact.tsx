@@ -4,6 +4,12 @@ import Head from "next/head";
 import React, { Suspense } from "react";
 const Form = dynamic(() => import("@/components/Form"), { suspense: true });
 
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
+
 const Contact: React.FC = () => {
   return (
     <>

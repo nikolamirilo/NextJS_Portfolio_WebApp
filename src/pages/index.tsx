@@ -1,4 +1,3 @@
-import { Loader } from "@/components";
 import { Hero } from "@/sections";
 import { HomeProps } from "@/typescript/interfaces/pages";
 import dynamic from "next/dynamic";
@@ -9,16 +8,20 @@ const Timeline = dynamic(() => import("@/sections/Timeline"), { suspense: true }
 const Services = dynamic(() => import("@/sections/Services"), { suspense: true });
 
 export async function getStaticProps() {
-  const response = await fetch(`${process.env.WEB_APP_URL}/api/projects`);
-  const data = await response.json();
+  const services_response = await fetch(`${process.env.WEB_APP_URL}/api/services`);
+  const services_data = await services_response.json();
+  const projects_response = await fetch(`${process.env.WEB_APP_URL}/api/projects`);
+  const projects_data = await projects_response.json();
   return {
     props: {
-      projects: data.allProjects ? data.allProjects : null,
+      projects: projects_data.allProjects ? projects_data.allProjects : null,
+      services: services_data.allServices ? services_data.allServices : null,
     },
   };
 }
 
-const Home: React.FC<HomeProps> = ({ projects }) => {
+const Home: React.FC<HomeProps> = ({ projects, services }) => {
+  console.log(services);
   return (
     <main className="home">
       <Head>
@@ -36,7 +39,7 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
         <Portfolio data={projects} />
       </Suspense>
       <Suspense fallback={<h2>Loading...</h2>}>
-        <Services data={projects} />
+        <Services data={services} />
       </Suspense>
       <Suspense fallback={<h2>Loading...</h2>}>
         <Timeline />
