@@ -1,5 +1,6 @@
 .single-project {
   @include flex(row, space-around, center);
+  @include fadeAnimation(0.5s, 0s);
   @include media($xs) {
     @include flex(column, center, center);
   }

@@ -1,5 +1,6 @@
 .about {
   @include pagePadding;
+  @include fadeAnimation(0.5s, 0s);
   h1 {
     font-size: 1.6rem;
   }
