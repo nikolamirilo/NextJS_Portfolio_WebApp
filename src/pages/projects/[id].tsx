@@ -24,7 +24,7 @@ export const getStaticProps = async (context: any) => {
   const data = await response.json();
   return {
     props: {
-      project: data.singleProject ? data.singleProject : null,
+      project: data.singleProject ? data.singleProject : {},
     },
     // revalidate: 60,
   };

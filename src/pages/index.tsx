@@ -14,8 +14,8 @@ export async function getStaticProps() {
   const projects_data = await projects_response.json();
   return {
     props: {
-      projects: projects_data.allProjects ? projects_data.allProjects : null,
-      services: services_data.allServices ? services_data.allServices : null,
+      projects: projects_data.allProjects ? projects_data.allProjects : [],
+      services: services_data.allServices ? services_data.allServices : [],
     },
   };
 }
