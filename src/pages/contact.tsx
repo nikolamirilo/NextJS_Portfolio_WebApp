@@ -1,21 +1,18 @@
-import { Loader } from "@/components";
+import { Loader, Form } from "@/components";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import React, { Suspense } from "react";
-const Form = dynamic(() => import("@/components/Form"), { suspense: true });
 
-const Contact: React.FC = () => {
+const contact: React.FC = () => {
   return (
     <>
       <Head>
         <title>Contact</title>
       </Head>
       <main className="contact">
-        <Suspense fallback={<Loader />}>
-          <Form />
-        </Suspense>
+        <Form />
       </main>
     </>
   );
 };
-export default Contact;
+export default contact;

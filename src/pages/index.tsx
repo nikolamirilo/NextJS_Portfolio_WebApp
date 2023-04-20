@@ -8,16 +8,26 @@ const Timeline = dynamic(() => import("@/sections/Timeline"), { suspense: true }
 const Services = dynamic(() => import("@/sections/Services"), { suspense: true });
 
 export async function getStaticProps() {
-  const services_response = await fetch(`${process.env.WEB_APP_URL}/api/services`);
-  const services_data = await services_response.json();
-  const projects_response = await fetch(`${process.env.WEB_APP_URL}/api/projects`);
-  const projects_data = await projects_response.json();
-  return {
-    props: {
-      projects: projects_data.allProjects ? projects_data.allProjects : [],
-      services: services_data.allServices ? services_data.allServices : [],
-    },
-  };
+  try {
+    const services_response = await fetch(`${process.env.WEB_APP_URL}/api/services`);
+    const services_data = await services_response.json();
+    const projects_response = await fetch(`${process.env.WEB_APP_URL}/api/projects`);
+    const projects_data = await projects_response.json();
+    return {
+      props: {
+        projects: projects_data.allProjects || [],
+        services: services_data.allServices || [],
+      },
+    };
+  } catch (error) {
+    console.error(error);
+    return {
+      props: {
+        projects: [],
+        services: [],
+      },
+    };
+  }
 }
 
 const Home: React.FC<HomeProps> = ({ projects, services }) => {

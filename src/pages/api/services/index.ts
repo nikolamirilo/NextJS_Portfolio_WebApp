@@ -7,8 +7,12 @@ type Services = {
 };
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  const data = await getAllServices();
-  const allServices = data ? data.allServices : {};
-  res.setHeader("Cache-Control", "s-maxage=86400");
-  res.status(200).json({ allServices });
+  try {
+    const data = await getAllServices();
+    const allServices = data ? data.allServices : {};
+    res.setHeader("Cache-Control", "s-maxage=86400");
+    res.status(200).json({ allServices });
+  } catch (error) {
+    res.status(500).json({ message: error });
+  }
 }

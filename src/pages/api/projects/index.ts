@@ -7,8 +7,12 @@ type Projects = {
 };
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  const data = await getAllProjects();
-  const allProjects = data.allProjects;
-  res.setHeader("Cache-Control", "s-maxage=86400");
-  res.status(200).json({ allProjects });
+  try {
+    const data = await getAllProjects();
+    const allProjects = data ? data.allProjects : {};
+    res.setHeader("Cache-Control", "s-maxage=86400");
+    res.status(200).json({ allProjects });
+  } catch (error) {
+    res.status(500).json({ message: error });
+  }
 }

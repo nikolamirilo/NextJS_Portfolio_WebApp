@@ -3,9 +3,7 @@ import clientPromise from "@/lib/mongodb";
 export const getAllProjects = async () => {
   const client = await clientPromise;
   const db = client.db("NextJS_PortfolioApp");
-  const allProjects = (await db.collection("projects").find({}).toArray()).sort(
-    (a, b) => a.id - b.id
-  );
+  const allProjects = (await db.collection("projects").find({}).toArray()).sort((a, b) => a.id - b.id);
   return { allProjects };
 };
 
