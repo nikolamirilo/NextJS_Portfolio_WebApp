@@ -1,6 +1,6 @@
 import moment from "moment";
 const EXTERNAL_DATA_URL = "https://mirilo-nikola.netlify.app/api/projects";
-const date = moment().format("MMM Do YY");
+const date = moment().format("YYYY-MM-DDThh:mm:ssTZD");
 
 function generateSiteMap(projects) {
   return `<?xml version="1.0" encoding="UTF-8"?>

@@ -13,10 +13,17 @@ export async function getStaticProps() {
     const services_data = await services_response.json();
     const projects_response = await fetch(`${process.env.WEB_APP_URL}/api/projects`);
     const projects_data = await projects_response.json();
+    const heroInformation = {
+      title: "Empowering IT projects to success",
+      subtitle:
+        "Utilizing my skills in project management and programming to drive successful results by effective planning and executing projects, delivering on deadlines and goals, and developing customized solutions through programming.",
+      image: "/images/office.webp",
+    };
     return {
       props: {
         projects: projects_data.allProjects || [],
         services: services_data.allServices || [],
+        heroInformation: heroInformation,
       },
     };
   } catch (error) {
@@ -25,13 +32,13 @@ export async function getStaticProps() {
       props: {
         projects: [],
         services: [],
+        heroInformation: {},
       },
     };
   }
 }
 
-const Home: React.FC<HomeProps> = ({ projects, services }) => {
-  console.log(services);
+const Home: React.FC<HomeProps> = ({ projects, services, heroInformation }) => {
   return (
     <main className="home">
       <Head>
@@ -40,11 +47,7 @@ const Home: React.FC<HomeProps> = ({ projects, services }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/NM.png" />
       </Head>
-      <Hero
-        title="Empowering IT projects to success"
-        subtitle="Utilizing my skills in project management and programming to drive successful results by effective planning and executing projects, delivering on deadlines and goals, and developing customized solutions through programming."
-        image="/images/office.webp"
-      />
+      <Hero title={heroInformation.title} subtitle={heroInformation.subtitle} image={heroInformation.image} />
       <Suspense fallback={<h2>Loading...</h2>}>
         <Portfolio data={projects} />
       </Suspense>
