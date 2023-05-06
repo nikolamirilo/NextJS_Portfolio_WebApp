@@ -85,7 +85,7 @@
 }
 @mixin cardsContainerStyle {
   @include contentPadding;
-  @include flex(row, space-evenly, center);
+  @include flex(row, space-around, center);
   gap: 1.5%;
   flex-wrap: wrap;
   width: 100%;

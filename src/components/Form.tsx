@@ -3,7 +3,7 @@ import React from "react";
 const Form: React.FC = () => {
   return (
     <form className="form">
-      <h1>Contact Us</h1>
+      <h1>Contact Me</h1>
       <input type="text" id="nameInput" placeholder="Enter your name*" name="name" required={true} />
       <input type="email" id="emailInput" placeholder="Enter your email address*" name="email" required={true} />
       <input type="text" id="subjectInput" placeholder="Subject*" name="subject" required={true} />
