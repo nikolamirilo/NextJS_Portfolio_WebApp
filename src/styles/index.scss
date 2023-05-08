@@ -11,6 +11,24 @@
   scroll-behavior: smooth;
   font-family: "Inter", sans-serif;
 }
+/*Scrollbar*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $primary;
+  border-radius: 0rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $secondary;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $secondary;
+}
 body {
   scroll-behavior: smooth;
   main {
