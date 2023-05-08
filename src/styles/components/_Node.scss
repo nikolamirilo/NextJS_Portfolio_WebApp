@@ -12,13 +12,26 @@
       @include flex(column, center, center);
     }
   }
-  p {
-    width: 20rem;
+  .content {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: right;
     @include media($xs) {
       width: 96%;
+    }
+    h2 {
+      font-size: 1.4rem;
+      text-align: center;
+    }
+    p {
+      width: 100%;
+      font-size: 1.2rem;
       text-align: center;
     }
   }
+
   .image {
     @include backgroundObjectImage(12rem, 12rem);
     border-radius: 100%;

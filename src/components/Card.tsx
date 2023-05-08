@@ -13,7 +13,13 @@ const Card: React.FC<CardProps> = ({ id, title, subtitle, image }) => {
       }}
     >
       <div className="card-image">
-        <Image src={image} alt={title} width={360} height={210} />
+        <Image
+          src={image}
+          alt={title}
+          fill
+          objectFit="cover"
+          sizes="(max-width: 768px) 90vw, 350px"
+        />
       </div>
       <div className="card-text">
         <h2>{title}</h2>

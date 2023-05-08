@@ -1,18 +1,14 @@
-import Image from "next/image";
+import { NodeProps } from "@/typescript/interfaces/components";
 import React from "react";
 
-const Node: React.FC = () => {
+const Node: React.FC<NodeProps> = ({ title, description, image }) => {
   return (
     <div className="node">
-      <div
-        className="image"
-        style={{ backgroundImage: `url(https://patterns.dev/img/reactjs/react-logo@3x.svg)` }}
-      ></div>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur quae in, obcaecati saepe dolores tenetur
-        rerum reprehenderit nam veniam ullam asperiores doloribus quasi! Magni libero repellendus deserunt a velit.
-        Adipisci.
-      </p>
+      <div className="image" style={{ backgroundImage: `url(${image})` }}></div>
+      <div className="content">
+        <h2>{title}</h2>
+        <p>{description}</p>
+      </div>
     </div>
   );
 };

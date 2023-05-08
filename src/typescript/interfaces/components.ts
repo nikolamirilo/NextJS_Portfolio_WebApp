@@ -4,3 +4,8 @@ export interface CardProps {
   subtitle: string;
   image: string;
 }
+export interface NodeProps {
+  title: string;
+  description: string;
+  image: string;
+}

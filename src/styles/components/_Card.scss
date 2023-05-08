@@ -2,12 +2,16 @@
   @include flex(column, center, center);
   background-color: #fafafa;
   gap: 0.5rem;
-  width: fit-content;
+  width: 350px;
+  min-height: 300px;
+  height: fit-content;
   border-radius: 10px;
   padding-bottom: 0.5rem;
   @include boxShadow;
   cursor: pointer;
-  img {
+  .card-image {
+    @include backgroundObjectImage(100%, 200px);
+    position: relative;
     border-radius: 10px;
   }
   h2 {
@@ -16,9 +20,9 @@
   p {
     text-align: center;
   }
-  @include media($xs) {
-    img {
-      width: 90vw;
-    }
+}
+@include media($md) {
+  .card {
+    width: 90vw;
   }
 }
