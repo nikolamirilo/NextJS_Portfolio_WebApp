@@ -36,6 +36,7 @@
       font-weight: 500;
       @include media($xxs) {
         font-size: 1.2rem;
+        width: 90%;
       }
     }
     .hero-buttons {

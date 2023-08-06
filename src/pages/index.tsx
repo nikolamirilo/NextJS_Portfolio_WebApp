@@ -2,41 +2,17 @@ import { Hero } from "@/sections";
 import { HomeProps } from "@/typescript/interfaces/pages";
 import dynamic from "next/dynamic";
 import Head from "next/head";
+import data from "../data.json";
 import React, { Suspense } from "react";
-const Portfolio = dynamic(() => import("@/sections/Portfolio"), { suspense: true });
-const Timeline = dynamic(() => import("@/sections/Timeline"), { suspense: true });
-const Services = dynamic(() => import("@/sections/Services"), { suspense: true });
-
-export async function getStaticProps() {
-  try {
-    const services_response = await fetch(`${process.env.WEB_APP_URL}/api/services`);
-    const services_data = await services_response.json();
-    const projects_response = await fetch(`${process.env.WEB_APP_URL}/api/projects`);
-    const projects_data = await projects_response.json();
-    const heroInformation = {
-      title: "Empowering IT projects to success",
-      subtitle:
-        "Utilizing my skills in project management and programming to drive successful results by effective planning and executing projects, delivering on deadlines and goals, and developing customized solutions through programming.",
-      image: "/images/office.webp",
-    };
-    return {
-      props: {
-        projects: projects_data.allProjects || [],
-        services: services_data.allServices || [],
-        heroInformation: heroInformation,
-      },
-    };
-  } catch (error) {
-    console.error(error);
-    return {
-      props: {
-        projects: [],
-        services: [],
-        heroInformation: {},
-      },
-    };
-  }
-}
+const Portfolio = dynamic(() => import("@/sections/Portfolio"), {
+  suspense: true,
+});
+const Timeline = dynamic(() => import("@/sections/Timeline"), {
+  suspense: true,
+});
+const Services = dynamic(() => import("@/sections/Services"), {
+  suspense: true,
+});
 
 const Home: React.FC<HomeProps> = ({ projects, services, heroInformation }) => {
   return (
@@ -47,12 +23,16 @@ const Home: React.FC<HomeProps> = ({ projects, services, heroInformation }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/NM.png" />
       </Head>
-      <Hero title={heroInformation.title} subtitle={heroInformation.subtitle} image={heroInformation.image} />
+      <Hero
+        title="Empowering IT projects to success"
+        subtitle="Utilizing my skills in project management and programming to drive successful results by effective planning and executing projects, delivering on deadlines and goals, and developing customized solutions through programming."
+        image="/images/office.webp"
+      />
       <Suspense fallback={<h2>Loading...</h2>}>
-        <Portfolio data={projects} />
+        <Portfolio data={data?.projects} />
       </Suspense>
       <Suspense fallback={<h2>Loading...</h2>}>
-        <Services data={services} />
+        <Services data={data?.services} />
       </Suspense>
       <Suspense fallback={<h2>Loading...</h2>}>
         <Timeline />

@@ -6,7 +6,13 @@ const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <Image src="/NM.webp" alt="Logo" width={60} height={60} style={{ margin: "1vh 0" }} />
+        <Image
+          src="/NM.webp"
+          alt="Logo"
+          width={60}
+          height={60}
+          style={{ margin: "1vh 0" }}
+        />
       </div>
       <input id="menu-toggle" type="checkbox" />
       <label className="menu-button-container" htmlFor="menu-toggle">
@@ -14,7 +20,7 @@ const Navbar: React.FC = () => {
       </label>
       <div className="links">
         <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
+        <Link href="/about">About Me</Link>
         <Link href="/contact">Contact</Link>
         <Link href="/NikolaMirilo.pdf">CV</Link>
       </div>

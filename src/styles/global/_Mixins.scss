@@ -46,7 +46,7 @@
 
 @mixin sectionStyle {
   width: 100%;
-  padding: 5vh 5vw;
+  padding: 15vh 5vw;
   @include media($xs) {
     padding: 5vh 2vw;
   }

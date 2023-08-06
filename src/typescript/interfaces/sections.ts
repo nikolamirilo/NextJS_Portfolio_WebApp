@@ -1,10 +1,10 @@
-import { Project } from "../types/types";
+import { Project, Service } from "../types/types";
 
 export interface PortfolioProps {
   data: Project[];
 }
 export interface ServicesProps {
-  data: Project[];
+  data: Service[];
 }
 export interface HeroProps {
   title: string;

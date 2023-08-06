@@ -1,43 +1,15 @@
 import { Loader } from "@/components";
 import { SingleProjectProps } from "@/typescript/interfaces/pages";
-import { Project } from "@/typescript/types/types";
+import data from "../../data.json";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { Project } from "@/typescript/types/types";
 
-//!INCREMENTAL STATIC REGENERATION
-export const getStaticPaths = async () => {
-  const response = await fetch(`${process.env.WEB_APP_URL}/api/projects`);
-  const data = await response.json();
-  // Get the paths we want to pre-render based on posts
-  const allProjects: Project[] = data.allProjects;
-  const paths = allProjects.map((item: Project) => ({
-    params: { id: item.id },
-  }));
-  return { paths, fallback: false };
-};
-
-export const getStaticProps = async (context: any) => {
-  const id = context.params.id;
-  const response = await fetch(`${process.env.WEB_APP_URL}/api/projects/${id}`);
-  const data = await response.json();
-  return {
-    props: {
-      project: data.singleProject ? data.singleProject : {},
-    },
-    // revalidate: 60,
-  };
-};
-
-const SingleProject: React.FC<SingleProjectProps> = ({ project }) => {
+const SingleProject: React.FC<SingleProjectProps> = () => {
   const [loading, setLoading] = useState(true);
-  const images = [
-    "/images/projects/swapabee.webp",
-    "/images/projects/webuyindubai.webp",
-    "/images/projects/ariosoinvestment.webp",
-    "/images/projects/reactifysolutions.webp",
-  ];
+  const project: any = data?.projects.filter((project) => project.id === "1");
   useEffect(() => {
     setTimeout(() => setLoading(false), 1000);
   });
@@ -52,7 +24,7 @@ const SingleProject: React.FC<SingleProjectProps> = ({ project }) => {
         <main className="single-project">
           <div className="image">
             <Image
-              src={images[Number(project.id ? project.id : 1) - 1]}
+              src={project.image}
               alt={project.title ? project.title : "Project Title"}
               width={400}
               height={200}
@@ -60,8 +32,14 @@ const SingleProject: React.FC<SingleProjectProps> = ({ project }) => {
           </div>
           <div className="content">
             <h1>Project: {project.title ? project.title : "Project Title"}</h1>
-            <p>{project.description ? project.description : "Project Description"}</p>
-            <Link href={project.link ? project.link : ""}>{project.title ? project.title : "Project Title"}</Link>
+            <p>
+              {project.description
+                ? project.description
+                : "Project Description"}
+            </p>
+            <Link href={project.link ? project.link : ""}>
+              {project.title ? project.title : "Project Title"}
+            </Link>
           </div>
         </main>
       )}
@@ -69,16 +47,3 @@ const SingleProject: React.FC<SingleProjectProps> = ({ project }) => {
   );
 };
 export default SingleProject;
-
-//!SERVER-SIDE RENDERING
-// export async function getServerSideProps(context: GetServerSidePropsContext) {
-//   const id = context.params?.id;
-//   const response = await fetch(`${process.env.WEB_APP_URL}/api/projects/${id}`);
-//   const data = await response.json();
-//   context.res.setHeader("Cache-Control", "public, s-maxage=10, stale-while-revalidate=59");
-//   return {
-//     props: {
-//       project: data.singleProject ? data.singleProject : null,
-//     },
-//   };
-// }

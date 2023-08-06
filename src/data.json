@@ -1,4 +1,86 @@
 {
+  "projects":[
+   {
+    "id": "1",
+    "title":"E-Commerce Web App",
+    "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
+    "link": "",
+    "image": "/images/projects/swapabee.webp"
+   },
+   {
+    "id": "2",
+    "title":"E-Commerce Web App",
+    "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
+    "link": "",
+    "image":  "/images/projects/webuyindubai.webp"
+   },
+   {
+    "id": "3",
+    "title":"E-Commerce Web App",
+    "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
+    "link": "",
+    "image":  "/images/projects/ariosoinvestment.webp"
+   },
+   {
+    "id": "4",
+    "title":"E-Commerce Web App",
+    "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
+    "link": "",
+    "image": "/images/projects/reactifysolutions.webp"
+   },
+   {
+    "id": "5",
+    "title":"E-Commerce Web App",
+    "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
+    "link": "",
+    "image": "/images/projects/webuyindubai.webp"
+   },
+   {
+    "id": "6",
+    "title":"E-Commerce Web App",
+    "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
+    "link": "",
+    "image": "/images/projects/reactifysolutions.webp"
+   }
+  ],
+  "services":[
+    {
+      "id": "1",
+      "title": "Web Development",
+      "description": "Providing services of buliding full-stack web application and courses of learining them.",
+      "image": "/images/services/pm.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Project Management",
+      "description": "Providing services of buliding full-stack web application and courses of learining them.",
+      "image": "/images/services/wd.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Web Development Courses",
+      "description": "Providing services of buliding full-stack web application and courses of learining them.",
+      "image":"/images/services/cs.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Photography",
+      "description": "Providing services of buliding full-stack web application and courses of learining them.",
+      "image": "/images/services/as.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Search Engine Optimization",
+      "description": "Providing services of buliding full-stack web application and courses of learining them.",
+      "image": "/images/services/wd.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Scrum services",
+      "description": "Providing services of buliding full-stack web application and courses of learining them.",
+      "image": "/images/services/pm.jpg"
+    }
+  ],
   "nodes": [
     {
       "title": "Beginnings",
@@ -22,11 +104,25 @@
       "imageName": "Node JS"
     },
     {
-      "title": "Learning more, more, and more",
+      "title": "Web Development",
       "date": "January 2021",
       "description": "Expanding knowledge about responsive design, servers, and ReactJS. This website is made using ReactJS and NodeJS.",
       "image": "https://cdn.iconscout.com/icon/free/png-256/react-1-282599.png",
       "imageName": "React JS"
+    },
+    {
+      "title": "First contract project!",
+      "date": "June 2021",
+      "description": "Started working on main product for company Swapali LTD named Swapabee. Worked on frontend side of web application using React.JS, Redux and Sass.",
+      "image": "https://th.bing.com/th/id/OIP.T-zzy8ST4xJn14jM-sCjjgHaHa?pid=ImgDet&rs=1",
+      "imageName": "Swapabee"
+    },
+    {
+      "title": "First step in corporate world!",
+      "date": "July 2022",
+      "description": "Started working in Adacta on internship program as Junior Project Manager in Delivery for DACH region.",
+      "image": "https://media-exp1.licdn.com/dms/image/C4D0BAQEOZmUT1awbkw/company-logo_200_200/0/1567156254359?e=2159024400&v=beta&t=V_VIp7B2hgJz9XqkNGDTOAj6daPkJcEtGFqXGirQbig",
+      "imageName": "Adacta"
     }
   ]
 }
