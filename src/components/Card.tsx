@@ -3,13 +3,20 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
 
-const Card: React.FC<CardProps> = ({ id, title, subtitle, image }) => {
+const Card: React.FC<CardProps> = ({
+  id,
+  title,
+  subtitle,
+  link,
+  image,
+  type,
+}) => {
   const router = useRouter();
   return (
     <div
       className="card"
       onClick={() => {
-        router.push(`/projects/${id}`);
+        router.replace(link ? link : "");
       }}
     >
       <div className="card-image">

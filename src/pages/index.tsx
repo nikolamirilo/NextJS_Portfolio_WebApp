@@ -29,10 +29,10 @@ const Home: React.FC<HomeProps> = ({ projects, services, heroInformation }) => {
         image="/images/office.webp"
       />
       <Suspense fallback={<h2>Loading...</h2>}>
-        <Portfolio data={data?.projects} />
+        <Services data={data?.services} />
       </Suspense>
       <Suspense fallback={<h2>Loading...</h2>}>
-        <Services data={data?.services} />
+        <Portfolio data={data?.projects} />
       </Suspense>
       <Suspense fallback={<h2>Loading...</h2>}>
         <Timeline />

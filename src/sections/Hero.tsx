@@ -11,8 +11,8 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, image }) => {
         <h1>{title}</h1>
         <h2>{subtitle}</h2>
         <div className="hero-buttons">
+          <Link href="#services">Services</Link>
           <Link href="#portfolio">Portfolio</Link>
-          <Link href="#timeline">Timeline</Link>
         </div>
       </div>
     </section>

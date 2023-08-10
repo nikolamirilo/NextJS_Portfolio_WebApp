@@ -12,7 +12,8 @@ const Portfolio: React.FC<PortfolioProps> = ({ data }) => {
               return (
                 <Card
                   key={idx}
-                  id={project.id}
+                  type="portfolio"
+                  link={project.link}
                   title={project.title}
                   image={project.image}
                   subtitle={project.description}

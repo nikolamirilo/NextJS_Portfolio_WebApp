@@ -12,7 +12,7 @@ const Services: React.FC<ServicesProps> = ({ data }) => {
               return (
                 <Card
                   key={idx}
-                  id={service.id}
+                  type="services"
                   title={service.title}
                   image={service.image}
                   subtitle={service.description}

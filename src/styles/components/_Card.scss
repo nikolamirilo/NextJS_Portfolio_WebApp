@@ -14,6 +14,9 @@
     @include backgroundObjectImage(100%, 200px);
     position: relative;
     border-radius: 10px;
+    img{
+      border-radius: 10px;
+    }
   }
   .card-text {
     @include flex(column, flex-start, center);
