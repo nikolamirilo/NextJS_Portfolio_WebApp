@@ -43,7 +43,10 @@
     padding: 0 4vw;
   }
 }
-
+@mixin headingStyle {
+  font-size: $headingFS;
+  text-align: center;
+}
 @mixin sectionStyle {
   width: 100%;
   padding: 15vh 5vw 0vh 5vw;

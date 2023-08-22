@@ -17,8 +17,7 @@
     padding: 2rem 1rem;
   }
   h1 {
-    font-size: $headingFS;
-    text-align: center;
+@include headingStyle;
     font-weight: 400;
     color: $primary;
     margin: 2vh 0;
