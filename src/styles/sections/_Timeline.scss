@@ -2,4 +2,7 @@
   @include sectionStyle;
   @include flex(column, center, center);
   gap: 5vh;
+  h1 {
+    font-size: $headingFS;
+  }
 }

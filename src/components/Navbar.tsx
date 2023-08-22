@@ -20,8 +20,8 @@ const Navbar: React.FC = () => {
       </label>
       <div className="links">
         <Link href="/">Home</Link>
-        <Link href="/about">About Me</Link>
-        <Link href="/contact">Contact</Link>
+        {/* <Link href="/about">About Me</Link> */}
+        <Link href="mailto:nikolamirilo.com">Contact</Link>
         <Link href="/NikolaMirilo.pdf">CV</Link>
       </div>
     </nav>

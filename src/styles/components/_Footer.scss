@@ -2,6 +2,7 @@
   @include layoutSectionStyle;
   @include flex(row, space-between, center);
   height: fit-content;
+  margin-top: 15vh;
   padding: 4vh 5vw;
   @include media($sm) {
     @include flex(column, center, center);
