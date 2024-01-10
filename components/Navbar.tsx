@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import React, { useState } from "react";
 
 const Navbar: React.FC = () => {
@@ -29,21 +28,21 @@ const Navbar: React.FC = () => {
         <div className="menu-button"></div>
       </label>
       <div className="links">
-        <Link onClick={handleNavbar} href="#about">
+        <a onClick={handleNavbar} href="#about">
           About me
-        </Link>
-        <Link onClick={handleNavbar} href="#services">
+        </a>
+        <a onClick={handleNavbar} href="#services">
           Services
-        </Link>
-        <Link onClick={handleNavbar} href="#portfolio">
+        </a>
+        <a onClick={handleNavbar} href="#portfolio">
           Portfolio
-        </Link>
-        <Link onClick={handleNavbar} href="#education">
+        </a>
+        <a onClick={handleNavbar} href="#education">
           Education
-        </Link>
-        <Link onClick={handleNavbar} href="mailto:nikolamirilo.com">
+        </a>
+        <a onClick={handleNavbar} href="mailto:nikolamirilo.com">
           Contact me
-        </Link>
+        </a>
       </div>
     </nav>
   );
