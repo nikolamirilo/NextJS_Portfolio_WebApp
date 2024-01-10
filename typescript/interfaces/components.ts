@@ -12,3 +12,8 @@ export interface NodeProps {
   image: string;
   date: string;
 }
+export interface SkillProps {
+  title: string;
+  progress: number;
+  progressValue: number;
+}

@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -40,7 +39,7 @@ const Footer: React.FC = () => {
             <AiOutlineGithub />
           </Link>
         </div>
-        <p>Copyright @ 2023 Nikola Mirilo</p>
+        <p>Copyright @Reactify Solutions 2023.</p>
       </div>
     </footer>
   );

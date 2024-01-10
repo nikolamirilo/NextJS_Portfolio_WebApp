@@ -13,10 +13,6 @@ const nextConfig = {
       { hostname: "www.lexpressproperty.com" },
     ],
   },
-  env: {
-    MONGODB_URI:
-      "mongodb+srv://nikolamirilo:veslanje123@cluster0.6kvwzdu.mongodb.net/?retryWrites=true&w=majority",
-  },
 };
 
 export default nextConfig;
