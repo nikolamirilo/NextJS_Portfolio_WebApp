@@ -4,3 +4,4 @@ export { default as Navbar } from "components/Navbar";
 export { default as Loader } from "components/Loader";
 export { default as Node } from "components/Node";
 export { default as Skill } from "components/Skill";
+export { default as Service } from "components/Service";

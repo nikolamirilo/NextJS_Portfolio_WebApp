@@ -47,38 +47,32 @@
     {
       "id": "1",
       "title": "Web Development",
-      "description": "Providing services of buliding full-stack web application and courses of learining them.",
-      "image": "/images/services/wd.jpg"
+      "description": "Providing services of buliding full-stack web application and courses of learining them."
     },
     {
       "id": "2",
       "title": "Project Management",
-      "description": "Providing services of coordinating work of developers and testers in order to build progressive web or mobile applications.",
-      "image": "/images/services/pm.webp"
+      "description": "Providing services of coordinating work of developers and testers in order to build progressive web or mobile applications."
     },
     {
       "id": "3",
-      "title": "Consulting Services",
-      "description": "Providing consulting services in area of Project Management & Scrum to IT industry projects.",
-      "image": "/images/services/cs.jpg"
+      "title": "Consulting",
+      "description": "Providing consulting services in area of Project Management, Scrum and Process Optimization to IT industry projects."
     },
     {
       "id": "4",
-      "title": "Management",
-      "description": "Providing services of planning, organizing, coorindating and controling businesses.",
-      "image": "/images/services/mngmt.jpg"
+      "title": "Process optimization",
+      "description": "Providing services of analyzing, measuring, optimizing and monitoring processes."
     },
     {
       "id": "5",
-      "title": "Web Development Course",
-      "description": "Sistematic lectures with practical exercises and mini projects using the newest web development technologies.",
-      "image": "/images/services/programming.jpg"
+      "title": "Sharing IT Expertise",
+      "description": "Sistematic lectures with practical exercises and mini projects using the newest technologies."
     },
     {
       "id": "6",
       "title": "Search Engine Optimization",
-      "description": "Providing services of Search Engine Optimization using Semrush and tehcnical SEO tehcniques.",
-      "image": "/images/services/seo.png"
+      "description": "Providing services of Search Engine Optimization using Semrush and tehcnical SEO tehcniques."
     }
   ],
   "education": [

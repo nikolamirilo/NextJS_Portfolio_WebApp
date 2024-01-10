@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface CardProps {
   id?: string;
   title: string;
@@ -16,4 +18,9 @@ export interface SkillProps {
   title: string;
   progress: number;
   progressValue: number;
+}
+export interface ServiceProps {
+  title: string;
+  idx: number;
+  description: string;
 }

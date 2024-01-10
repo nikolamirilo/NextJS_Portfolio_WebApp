@@ -3,7 +3,7 @@
   grid-template-rows: 200px 1fr;
   gap: 0.5rem;
   background-color: #fafafa;
-  width: 380px;
+  width: 380px !important;
   min-height: 320px;
   height: fit-content;
   border-radius: 10px;
@@ -14,7 +14,7 @@
     @include backgroundObjectImage(100%, 200px);
     position: relative;
     border-radius: 10px;
-    img{
+    img {
       border-radius: 10px;
     }
   }
