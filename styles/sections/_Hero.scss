@@ -6,7 +6,7 @@
   @include contentPadding;
   @include flex(row, flex-start, center);
   @include media($md) {
-    @include flex(row, center, center);
+    @include flex(row, center, flex-start);
     width: 100%;
   }
   .hero-content {
@@ -21,6 +21,7 @@
     @include media($md) {
       @include flex(column, flex-start, center);
       width: 100%;
+      bottom: 0;
     }
     h1 {
       font-size: 3rem;
