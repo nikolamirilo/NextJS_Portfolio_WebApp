@@ -1,32 +1,56 @@
+"use client";
 import { Skill } from "components";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+import data from "../data.json";
 
 const Skills = () => {
-  const skillsData = [
-    { title: "PM", progress: 80 },
-    { title: "React.js", progress: 75 },
-    { title: "Node.js", progress: 80 },
-    { title: "MongoDB", progress: 65 },
-    { title: "Lean", progress: 60 },
-    { title: "Scrum", progress: 80 },
-    { title: "Six Sigma", progress: 60 },
-    { title: "Organization", progress: 95 },
-    { title: "Jira", progress: 100 },
-    { title: "Excel", progress: 90 },
-    { title: "Python", progress: 60 },
-    { title: "Java", progress: 30 },
-  ];
+  const targetRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleIntersection = (entries: any) => {
+    entries.forEach((entry: any) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+      }
+    });
+  };
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5, // Adjust this threshold as needed
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, options);
+    const tRef = targetRef.current!;
+    if (tRef) {
+      observer.observe(tRef);
+    }
+
+    // Cleanup the observer on component unmount
+    return () => {
+      if (targetRef.current) {
+        observer.unobserve(tRef);
+      }
+    };
+  }, []);
 
   return (
     <section id="skills">
-      {skillsData.map((skill, idx) => (
-        <Skill
-          key={idx}
-          title={skill.title}
-          progress={skill.progress}
-          progressValue={skill.progress}
-        />
-      ))}
+      {data?.skills?.map((skill, idx) => {
+        return (
+          <div key={idx} ref={targetRef}>
+            {isVisible && (
+              <Skill
+                title={skill.title}
+                progress={skill.progress}
+                progressValue={skill.progress}
+              />
+            )}
+          </div>
+        );
+      })}
     </section>
   );
 };

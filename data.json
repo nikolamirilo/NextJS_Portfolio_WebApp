@@ -157,5 +157,19 @@
       "image": "https://media-exp1.licdn.com/dms/image/C4D0BAQEOZmUT1awbkw/company-logo_200_200/0/1567156254359?e=2159024400&v=beta&t=V_VIp7B2hgJz9XqkNGDTOAj6daPkJcEtGFqXGirQbig",
       "imageName": "Adacta"
     }
+  ],
+  "skills": [
+    { "title": "PM", "progress": 80 },
+    { "title": "React.js", "progress": 75 },
+    { "title": "Node.js", "progress": 80 },
+    { "title": "MongoDB", "progress": 65 },
+    { "title": "Lean", "progress": 60 },
+    { "title": "Scrum", "progress": 80 },
+    { "title": "Six Sigma", "progress": 60 },
+    { "title": "Organization", "progress": 95 },
+    { "title": "Jira", "progress": 100 },
+    { "title": "Excel", "progress": 90 },
+    { "title": "Python", "progress": 60 },
+    { "title": "Java", "progress": 30 }
   ]
 }
