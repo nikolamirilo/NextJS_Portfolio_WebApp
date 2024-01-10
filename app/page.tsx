@@ -16,7 +16,7 @@ const Home = () => {
           image="/images/office.webp"
         />
         <Timeline />
-        <Services data={data?.services} />
+        <Services />
         <Portfolio data={data?.projects} />
         <Education data={data?.education} />
         <Skills />
