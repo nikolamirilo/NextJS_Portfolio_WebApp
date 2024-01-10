@@ -51,7 +51,7 @@
   width: 100%;
   padding: 15vh 5vw 0vh 5vw;
   @include media($xs) {
-    padding: 5vh 2vw 0vh 2vw;
+    padding: 10vh 2vw 0vh 2vw;
   }
 }
 @mixin media($breakpoint) {
