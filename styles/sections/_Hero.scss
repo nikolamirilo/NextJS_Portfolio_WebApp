@@ -11,7 +11,7 @@
   }
   .hero-content {
     position: relative;
-    bottom: 10vh;
+    bottom: 5vh;
     @include flex(column, center, center);
     width: 40%;
     gap: 2vh;
@@ -19,9 +19,8 @@
       width: 50%;
     }
     @include media($md) {
-      @include flex(column, center, center);
+      @include flex(column, flex-start, center);
       width: 100%;
-      bottom: 15vh;
     }
     h1 {
       font-size: 3rem;
