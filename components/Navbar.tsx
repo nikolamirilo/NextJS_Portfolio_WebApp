@@ -29,9 +29,6 @@ const Navbar: React.FC = () => {
         <div className="menu-button"></div>
       </label>
       <div className="links">
-        <Link href="#hero" onClick={handleNavbar}>
-          Home
-        </Link>
         <Link onClick={handleNavbar} href="#about">
           About me
         </Link>
