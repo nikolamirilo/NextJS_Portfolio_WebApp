@@ -1,25 +1,23 @@
 import { Node } from "components";
 import React from "react";
-import { EducationProps } from "typescript/interfaces/sections";
+import data from "../data.json";
 
-const Education: React.FC<EducationProps> = ({ data }) => {
+const Education: React.FC = () => {
   return (
     <section id="education">
       <h1>Education</h1>
       <div className="cards-container">
-        {data
-          ? data.map((item: any, idx: any) => {
-              return (
-                <Node
-                  key={idx}
-                  date=""
-                  title={item.title}
-                  image={item.image}
-                  description={item.description}
-                />
-              );
-            })
-          : null}
+        {data.education.map((item: any, idx: any) => {
+          return (
+            <Node
+              key={idx}
+              date=""
+              title={item.title}
+              image={item.image}
+              description={item.description}
+            />
+          );
+        })}
       </div>
     </section>
   );

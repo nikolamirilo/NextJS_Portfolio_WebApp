@@ -15,7 +15,7 @@ const Service: React.FC<ServiceProps> = ({ idx, title, description }) => {
     <FaSearchengin size={40} />,
   ];
   return (
-    <div className="column">
+    <div className="column" id="service">
       <div className="card">
         <div className="icon-wrapper">{icons[idx]}</div>
         <h3>{title}</h3>
