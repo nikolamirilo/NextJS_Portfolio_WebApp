@@ -1,0 +1,8 @@
+#about {
+  @include sectionStyle;
+  @include flex(column, center, center);
+  gap: 5vh;
+  h1 {
+    @include headingStyle;
+  }
+}

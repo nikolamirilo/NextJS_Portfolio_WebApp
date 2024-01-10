@@ -6,17 +6,16 @@ const nextConfig = {
       transform: "react-icons/{{member}}",
     },
   },
+  images: {
+    remotePatterns: [
+      { hostname: "images.credly.com" },
+      { hostname: "th.bing.com" },
+      { hostname: "www.lexpressproperty.com" },
+    ],
+  },
   env: {
     MONGODB_URI:
       "mongodb+srv://nikolamirilo:veslanje123@cluster0.6kvwzdu.mongodb.net/?retryWrites=true&w=majority",
-  },
-  exportPathMap: async function (defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
-    return {
-      "/": { page: "/", query: { __nextDefaultLocale: "en" } },
-      "/about": { page: "/about", query: { __nextDefaultLocale: "en" } },
-      "/contact": { page: "/contact", query: { __nextDefaultLocale: "en" } },
-      "/projects/[id]": { page: "/projects/[id]", query: { __nextDefaultLocale: "en" } },
-    };
   },
 };
 

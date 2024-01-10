@@ -1,0 +1,161 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "DVA",
+      "description": "Managing implementation of Adinsure 3x software for German Insurance broker company DVA. Coordinating QA, BA, and development teams in order to fullfill requirements from client..",
+      "link": "https://www.adacta-fintech.com/news/dva-going-digital-with-adacta",
+      "image": "/images/projects/DVA.png"
+    },
+    {
+      "id": "2",
+      "title": "Signal Iduna",
+      "description": "Managing implementation of Adinsure 3x software for German Insurance company Signal Iduna. Coordinating QA, BA, and development teams in order to fullfill requirements from client..",
+      "link": "https://www.adacta-fintech.com/news/signal-iduna-turn-to-adinsure-to-transform-their-processes",
+      "image": "/images/projects/Signal.png"
+    },
+    {
+      "id": "3",
+      "title": "Reactify Solutions",
+      "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
+      "link": "",
+      "image": "/images/projects/reactifysolutions.webp"
+    },
+    {
+      "id": "4",
+      "title": "Swapabee",
+      "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
+      "link": "https://swapabee.ch/",
+      "image": "/images/projects/swapabee.webp"
+    },
+    {
+      "id": "5",
+      "title": "We Buy in Dubai",
+      "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
+      "link": "https://webuyindubai.com/",
+      "image": "/images/projects/webuyindubai.webp"
+    },
+    {
+      "id": "6",
+      "title": "Arioso Investment AG",
+      "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
+      "link": "",
+      "image": "/images/projects/ariosoinvestment.webp"
+    }
+  ],
+  "services": [
+    {
+      "id": "1",
+      "title": "Web Development",
+      "description": "Providing services of buliding full-stack web application and courses of learining them.",
+      "image": "/images/services/wd.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Project Management",
+      "description": "Providing services of coordinating work of developers and testers in order to build progressive web or mobile applications.",
+      "image": "/images/services/pm.webp"
+    },
+    {
+      "id": "3",
+      "title": "Consulting Services",
+      "description": "Providing consulting services in area of Project Management & Scrum to IT industry projects.",
+      "image": "/images/services/cs.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Management",
+      "description": "Providing services of planning, organizing, coorindating and controling businesses.",
+      "image": "/images/services/mngmt.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Web Development Course",
+      "description": "Sistematic lectures with practical exercises and mini projects using the newest web development technologies.",
+      "image": "/images/services/programming.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Search Engine Optimization",
+      "description": "Providing services of Search Engine Optimization using Semrush and tehcnical SEO tehcniques.",
+      "image": "/images/services/seo.png"
+    }
+  ],
+  "education": [
+    {
+      "id": "1",
+      "title": "Engineer of organizational sciences",
+      "description": "Bachelor degree in Operational Management at University of Belgrade, Faculty of Organizational Sciences (FOS)",
+      "image": "https://th.bing.com/th/id/OIP.Abb0SSBoDU746sNRksAUpQHaFO?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": "2",
+      "title": "Certified Associate in Project Management (CAPM)®",
+      "description": "Certification Number: 3450755. Issued on April 2023.",
+      "image": "https://images.credly.com/size/340x340/images/ad9ad44b-54b8-4916-ba10-7b131da0b732/capm-600px.png"
+    },
+    {
+      "id": "3",
+      "title": "Lean Specialist Yellow Belt",
+      "description": "Issued on December 2023. by Management Center Belgrade (MCB).",
+      "image": "https://th.bing.com/th/id/R.df4dd9036d526af0362d5284a0dd871e?rik=jNSkBnLu0TzkBA&pid=ImgRaw&r=0"
+    },
+    {
+      "id": "4",
+      "title": "Introduction to Agile in IT",
+      "description": "Issued on April 2022. by company SAP Fioneer.",
+      "image": "https://th.bing.com/th/id/OIP.4fcipEyecd0IW6FBY7xKAAHaEK?rs=1&pid=ImgDetMain"
+    }
+  ],
+  "nodes": [
+    {
+      "title": "Beginnings",
+      "date": "Jun 2017",
+      "description": "Started learning about basics of programming firstly in C and then using Java. After 6 months, I made transition to web development.",
+      "image": "https://dev.java/assets/images/java-logo-vert-blk.png",
+      "imageName": "Java Programming"
+    },
+    {
+      "title": "Created first website",
+      "date": "January 2019",
+      "description": "It was simple website that I made using HTML, CSS and Netlify platform. It was at basic level of coding in HTML and CSS with responsive design and few animations.",
+      "image": "http://www.chicagocomputerclasses.com/wp-content/uploads/2014/04/html5-css31.png",
+      "imageName": "HTML and CSS"
+    },
+    {
+      "title": "Transition to full stack programming",
+      "date": "December 2020",
+      "description": "Started learning more about backend and server side tools. Worked with numerous libraries and technologies like Node JS, Axios, Mongo DB, Firebase, etc.",
+      "image": "https://1.bp.blogspot.com/-sqAjIvOtpXI/XYoCmqOyMwI/AAAAAAAAJig/CowR8wgEauEs-RXN2IPmLYkC7NHoHuA3gCLcBGAsYHQ/s1600/node-js-logo.png",
+      "imageName": "Node JS"
+    },
+    {
+      "title": "Web Development",
+      "date": "January 2021",
+      "description": "Transition to modern web technologies. Started using React.js and its ecosystem to power numerous web apps.",
+      "image": "https://cdn.iconscout.com/icon/free/png-256/react-1-282599.png",
+      "imageName": "React JS"
+    },
+    {
+      "title": "First contract project!",
+      "date": "June 2021",
+      "description": "Started working on main product for company Swapali LTD named Swapabee. Worked on frontend side of web application using React.JS, Redux and Sass.",
+      "image": "https://th.bing.com/th/id/OIP.T-zzy8ST4xJn14jM-sCjjgHaHa?pid=ImgDet&rs=1",
+      "imageName": "Swapabee"
+    },
+    {
+      "title": "Freelancing as Reactify Solutions",
+      "date": "January 2022",
+      "description": "Developing web applications for multiple companies according to their requirements. Motly using stack: Next.js, TailwindCSS, MongoDB, Clerk, Cloudinary",
+      "image": "https://th.bing.com/th/id/R.5a7f514f79afa8b3eebd432243ba37bb?rik=xochhW8%2fYeASdQ&riu=http%3a%2f%2fnichebeautylab.com%2fcdn%2fshop%2ffiles%2flogo__niche__mobile.png%3fv%3d1639993071&ehk=sK0yc79Skay1%2bUXG%2fCkjEmvneZVLCDZlqqF1WqDpvkc%3d&risl=&pid=ImgRaw&r=0",
+      "imageName": "Next.js"
+    },
+    {
+      "title": "First step in corporate world!",
+      "date": "July 2022",
+      "description": "Started working in Adacta on internship program as Junior Project Manager/Business Consultant in Delivery for DACH region.",
+      "image": "https://media-exp1.licdn.com/dms/image/C4D0BAQEOZmUT1awbkw/company-logo_200_200/0/1567156254359?e=2159024400&v=beta&t=V_VIp7B2hgJz9XqkNGDTOAj6daPkJcEtGFqXGirQbig",
+      "imageName": "Adacta"
+    }
+  ]
+}
