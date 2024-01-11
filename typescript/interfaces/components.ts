@@ -1,12 +1,10 @@
 import { ReactNode } from "react";
 
 export interface CardProps {
-  id?: string;
   title: string;
-  link?: string;
-  subtitle: string;
+  link: string;
+  description: string;
   image: string;
-  type: string;
 }
 export interface NodeProps {
   title: string;

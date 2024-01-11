@@ -1,26 +1,24 @@
-import { Card } from "components";
 import React from "react";
 import data from "../data.json";
+import { Card } from "components";
 
-const Portfolio: React.FC = () => {
+const Portfolio = () => {
   return (
-    <section id="portfolio">
-      <h1>Portfolio</h1>
+    <div id="portfolio">
       <div className="cards-container">
         {data.projects.map((project, idx) => {
           return (
             <Card
               key={idx}
-              type="portfolio"
-              link={project.link}
               title={project.title}
+              link={project.link}
+              description={project.description}
               image={project.image}
-              subtitle={project.description}
             />
           );
         })}
       </div>
-    </section>
+    </div>
   );
 };
 export default Portfolio;
