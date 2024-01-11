@@ -1,5 +1,5 @@
 import React from "react";
-import { ServiceProps } from "typescript/interfaces/components";
+import { ServiceProps } from "typescript/interfaces";
 import { FaBusinessTime, FaLaptopCode, FaProjectDiagram } from "react-icons/fa";
 import { SiWebpack } from "react-icons/si";
 import { MdManageAccounts } from "react-icons/md";

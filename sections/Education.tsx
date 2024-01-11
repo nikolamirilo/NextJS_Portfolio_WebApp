@@ -11,7 +11,6 @@ const Education: React.FC = () => {
           return (
             <Node
               key={idx}
-              date=""
               title={item.title}
               image={item.image}
               description={item.description}

@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import { SkillProps } from "typescript/interfaces/components";
+import { SkillProps } from "typescript/interfaces";
 
 const Skill: React.FC<SkillProps> = ({ title, progress, progressValue }) => {
   function progressBarAndCountNumber() {

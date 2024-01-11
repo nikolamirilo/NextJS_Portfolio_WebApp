@@ -1,5 +1,5 @@
 import React from "react";
-import { NodeProps } from "typescript/interfaces/components";
+import { NodeProps } from "typescript/interfaces";
 
 const Node: React.FC<NodeProps> = ({ title, description, image, date }) => {
   return (

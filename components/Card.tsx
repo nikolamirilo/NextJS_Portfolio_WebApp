@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import { CardProps } from "typescript/interfaces/components";
+import { CardProps } from "typescript/interfaces";
 
 const Card: React.FC<CardProps> = ({ title, description, link, image }) => {
   return (

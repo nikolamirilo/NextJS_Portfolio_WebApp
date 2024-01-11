@@ -10,7 +10,7 @@ export interface NodeProps {
   title: string;
   description: string;
   image: string;
-  date: string;
+  date?: string;
 }
 export interface SkillProps {
   title: string;
