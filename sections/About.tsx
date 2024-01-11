@@ -52,9 +52,9 @@ const About = () => {
 
           <div className="about-text">
             <p>
-              Junior IT Project Manager/Business Consultant in DACH delivery
-              region for Adacta company, specializing in the implementation of
-              Scrum and Agile methodologies in Software Development projects.
+              Junior IT Project Manager/Business Consultant in Adacta, DACH
+              delivery region. Specialized in the implementation of Scrum and
+              Agile methodologies in Software Development projects.
             </p>
             <p>
               Beyond my project management role, I am a passionate Full-stack
