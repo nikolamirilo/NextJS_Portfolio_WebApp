@@ -3,65 +3,72 @@
     {
       "id": "1",
       "title": "DVA",
-      "description": "Managing implementation of Adinsure 3x software for German Insurance broker company DVA. Coordinating QA, BA, and development teams in order to fullfill requirements from client.",
+      "description": "Managed the implementation of Adinsure 3x software for the German insurance broker company DVA. Coordinated QA, BA, and development teams to fulfill client requirements.",
       "link": "https://www.adacta-fintech.com/news/dva-going-digital-with-adacta",
       "image": "/images/projects/DVA.png"
     },
     {
       "id": "2",
       "title": "Signal Iduna",
-      "description": "Managing implementation of Adinsure 3x software for German Insurance company Signal Iduna. Coordinating QA, BA, and development teams in order to fullfill requirements from client.",
+      "description": "Oversaw the implementation of Adinsure 3x software for the German insurance company Signal Iduna. Coordinated QA, BA, and development teams to meet client requirements.",
       "link": "https://www.adacta-fintech.com/news/signal-iduna-turn-to-adinsure-to-transform-their-processes",
       "image": "/images/projects/Signal_Iduna.png"
     },
     {
       "id": "3",
       "title": "Reactify Solutions",
-      "description": "Company for IT services, specialized in providing IT services in field of web development.",
+      "description": "IT services company specializing in web development. Visit our LinkedIn page for updates.",
       "link": "https://www.linkedin.com/company/90915935/admin/feed/posts/",
       "image": "/images/projects/Reactify_Solutions.webp"
     },
     {
       "id": "4",
       "title": "Swapabee",
-      "description": "Worked on building social netword and mobile app for Swiss-British company app using React.JS, Redux and Sass.",
+      "description": "Contributed to the development of a social network and mobile app for the Swiss-British company using React.JS, Redux, and Sass.",
       "link": "https://swapabee.ch/",
       "image": "/images/projects/Swapabee.jpg"
     },
     {
       "id": "5",
       "title": "We Buy in Dubai",
-      "description": "Development of protfolio website for Serbian company that is selling luxury watches in Dubai using React.js, Sass, and ResendAPI.",
+      "description": "Developed a portfolio website for a Serbian luxury watch seller in Dubai using React.js, Sass, and ResendAPI.",
       "link": "https://webuyindubai.com",
       "image": "/images/projects/WeBuyInDubai.png"
     },
     {
       "id": "6",
       "title": "Arioso Investment AG",
-      "description": "Worked on building protfolio website for German Real Estate company using React.js, Sass, and ResendAPI.",
+      "description": "Worked on building a portfolio website for a German Real Estate company using React.js, Sass, and ResendAPI.",
       "link": "https://arioso-investment-ag.netlify.app/",
       "image": "/images/projects/Arioso_Investment.png"
     },
     {
       "id": "7",
       "title": "Ultra Team S",
-      "description": "Development of portfolio website for a Serbian premium moving company using React.js and Sass.",
+      "description": "Developed a portfolio website for a Serbian premium moving company using React.js and Sass.",
       "link": "https://www.ultra-tim-s.com/",
       "image": "/images/projects/Ultra_Team_S.png"
     },
     {
       "id": "8",
       "title": "Claire Beauty",
-      "description": "Worked on building of portfolio website for beauty saloon Claire using Wordpress CMS.",
+      "description": "Worked on building a portfolio website for the beauty salon Claire using Wordpress CMS.",
       "link": "https://beautybyclaire.rs/",
       "image": "/images/projects/Claire.png"
     },
     {
-      "id": "8",
+      "id": "9",
       "title": "Montre Shop",
-      "description": "Development of E-Commerce web app for personal business using Next.js, Tailwind, MongoDB, ResendAPI, Clerk and Cloudinary.",
+      "description": "Developed an E-Commerce web app for personal business using Next.js, Tailwind, MongoDB, ResendAPI, Clerk, and Cloudinary.",
       "link": "https://www.montre-shop.com/",
       "image": "/images/projects/Montre.png"
+    },
+    {
+      "id": "10",
+      "title": "Companies to Students (C2S)",
+      "description": "Contributed to development of official event website using HTML, CSS, JQUERY, and Javascript.",
+      "link": "https://c2s.fonis.rs/2021/",
+      "image": "/images/projects/C2S.png"
     }
   ],
   "services": [
@@ -161,7 +168,7 @@
     {
       "title": "Freelancing as Reactify Solutions",
       "date": "January 2022",
-      "description": "Developing web applications for multiple companies according to their requirements. Motly using stack: Next.js, TailwindCSS, MongoDB, Clerk, Cloudinary",
+      "description": "Developing web applications for multiple companies according to their requirements. Mostly using stack: Next.js, TailwindCSS, MongoDB, Clerk, and Cloudinary.",
       "image": "https://th.bing.com/th/id/R.5a7f514f79afa8b3eebd432243ba37bb?rik=xochhW8%2fYeASdQ&riu=http%3a%2f%2fnichebeautylab.com%2fcdn%2fshop%2ffiles%2flogo__niche__mobile.png%3fv%3d1639993071&ehk=sK0yc79Skay1%2bUXG%2fCkjEmvneZVLCDZlqqF1WqDpvkc%3d&risl=&pid=ImgRaw&r=0",
       "imageName": "Next.js"
     },

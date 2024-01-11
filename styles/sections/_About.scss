@@ -1,0 +1,178 @@
+#about {
+  @include flex(column, center, center);
+  @include media($xs) {
+    width: 100%;
+    background-color: $primary;
+  }
+  .about-wrapper {
+    width: 80%;
+    @include media($lg) {
+      width: 92%;
+    }
+    @include media(450px) {
+      width: 100%;
+      background-color: $primary;
+    }
+  }
+  .about-left {
+    background: #c24e00e3; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      $secondary,
+      #c24e00e3
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      $secondary,
+      #c24e00e3
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100%;
+    @include media($xs) {
+      background: transparent;
+      min-height: 60vh;
+    }
+    display: flex;
+    @include flex(column, center, center);
+    min-height: 80vh;
+    height: fit-content;
+    color: #fff;
+  }
+  .about-left-content > div {
+    background: $primary;
+    padding: 4rem 4rem 2.5rem 5rem;
+    @include media($md) {
+      padding: 3rem 3rem 2rem 3.5rem;
+    }
+    @include media($xs) {
+      padding: 2rem 1rem;
+    }
+    text-align: center;
+  }
+  .about-left-content {
+    box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    width: 80%;
+    @include media($md) {
+      width: 90%;
+    }
+    @include media($xs) {
+      width: 100%;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+    }
+  }
+  .info {
+    background: transparent;
+  }
+  .about-img img {
+    display: block;
+    width: 200px;
+  }
+  .about-img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+  }
+  .shadow {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-left-content h2 {
+    font-size: 2rem;
+    margin: 2.2rem 0 0.6rem 0;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid $secondary;
+  }
+  .about-left-content h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 3px;
+  }
+  .icons {
+    background: $primary;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 0;
+  }
+  .icons li {
+    list-style-type: none;
+    background: $secondary;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    @include flex(row, center, center);
+    a {
+      @include flex(row, center, center);
+      color: $white;
+    }
+  }
+  .about-right {
+    background: $primary;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+    @include media($xs) {
+      padding: 0;
+    }
+    text-align: center;
+    color: #fff;
+  }
+  .about-right h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+  }
+  .about-right h1 span {
+    color: $secondary;
+  }
+  .about-right h2 {
+    font-weight: 600;
+  }
+  .about-text p {
+    font-size: 1rem;
+    padding: 0.5rem;
+    opacity: 0.8;
+  }
+
+  @media screen and (min-width: 992px) {
+    .about-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+    }
+
+    .about-left {
+      position: relative;
+    }
+    .about-left-content {
+      position: absolute;
+      width: 80%;
+    }
+  }
+  .credit {
+    text-align: center;
+    color: #fff;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  .credit a {
+    text-decoration: none;
+    color: $secondary;
+    font-weight: bold;
+  }
+}

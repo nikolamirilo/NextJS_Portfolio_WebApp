@@ -4,7 +4,7 @@ import data from "../data.json";
 
 const Timeline: React.FC = () => {
   return (
-    <section id="about">
+    <section id="timeline">
       <h1>How everything started</h1>
       {data.nodes
         ? data.nodes.map((node, idx) => {

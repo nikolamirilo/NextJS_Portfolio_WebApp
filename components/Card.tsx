@@ -5,12 +5,12 @@ import { CardProps } from "typescript/interfaces/components";
 
 const Card: React.FC<CardProps> = ({ title, description, link, image }) => {
   return (
-    <div className="card">
+    <div className="portfolio-card">
       <img src={image} alt="Mountain" />
       <div className="info">
         <h1>{title}</h1>
         <p>{description}</p>
-        <Link href={link}>Find more</Link>
+        <Link href={link}>Read more</Link>
       </div>
     </div>
   );

@@ -5,3 +5,4 @@ export { default as Services } from "sections/Services";
 export { default as Education } from "sections/Education";
 export { default as Skills } from "sections/Skills";
 export { default as Portfolio } from "sections/Portfolio";
+export { default as About } from "sections/About";

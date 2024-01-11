@@ -6,6 +6,7 @@ import {
   Education,
   Skills,
   Portfolio,
+  About,
 } from "sections";
 import React from "react";
 import { Footer, Navbar } from "components";
@@ -20,6 +21,7 @@ const Home = () => {
           subtitle="Utilizing my skills in project management and programming to drive successful results by effective planning and executing projects, delivering on deadlines and goals, and developing customized solutions through programming."
           image="/images/office.webp"
         />
+        <About />
         <Timeline />
         <Services />
         <Portfolio />

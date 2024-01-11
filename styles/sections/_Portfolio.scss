@@ -8,7 +8,7 @@
   .cards-container {
     @include cardsContainerStyle;
     // gap: 2rem;
-    .card {
+    .portfolio-card {
       width: 300px;
       cursor: pointer;
       @include media(300px) {
