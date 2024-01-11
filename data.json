@@ -17,49 +17,49 @@
     {
       "id": "3",
       "title": "Reactify Solutions",
-      "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
+      "description": "Company for IT services, specialized in providing IT services in field of web development.",
       "link": "https://www.linkedin.com/company/90915935/admin/feed/posts/",
       "image": "/images/projects/Reactify_Solutions.webp"
     },
     {
       "id": "4",
       "title": "Swapabee",
-      "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
+      "description": "Worked on building social netword and mobile app for Swiss-British company app using React.JS, Redux and Sass.",
       "link": "https://swapabee.ch/",
       "image": "/images/projects/Swapabee.jpg"
     },
     {
       "id": "5",
       "title": "We Buy in Dubai",
-      "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
+      "description": "Development of protfolio website for Serbian company that is selling luxury watches in Dubai using React.js, Sass, and ResendAPI.",
       "link": "https://webuyindubai.com",
       "image": "/images/projects/WeBuyInDubai.png"
     },
     {
       "id": "6",
       "title": "Arioso Investment AG",
-      "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
+      "description": "Worked on building protfolio website for German Real Estate company using React.js, Sass, and ResendAPI.",
       "link": "https://arioso-investment-ag.netlify.app/",
       "image": "/images/projects/Arioso_Investment.png"
     },
     {
       "id": "7",
       "title": "Ultra Team S",
-      "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
+      "description": "Development of portfolio website for a Serbian premium moving company using React.js and Sass.",
       "link": "https://www.ultra-tim-s.com/",
       "image": "/images/projects/Ultra_Team_S.png"
     },
     {
       "id": "8",
       "title": "Claire Beauty",
-      "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
+      "description": "Worked on building of portfolio website for beauty saloon Claire using Wordpress CMS.",
       "link": "https://beautybyclaire.rs/",
       "image": "/images/projects/Claire.png"
     },
     {
       "id": "8",
       "title": "Montre Shop",
-      "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
+      "description": "Development of E-Commerce web app for personal business using Next.js, Tailwind, MongoDB, ResendAPI, Clerk and Cloudinary.",
       "link": "https://www.montre-shop.com/",
       "image": "/images/projects/Montre.png"
     }
