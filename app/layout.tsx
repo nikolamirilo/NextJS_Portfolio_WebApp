@@ -6,6 +6,8 @@ const font = Open_Sans({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Nikola Mirilo",
+  description:
+    "Hello! I am Nikola, Junior IT Project Manager/Business Consultant in Adacta, DACH delivery region. Specialized in the implementation of Scrum and Agile methodologies in Software Development projects.",
 };
 
 export default function RootLayout({

@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
     <nav className="navbar">
       <div className="logo">
         <Image
-          src="/Logo.png"
+          src="/LogoTransparent.png"
           alt="Logo"
           width={60}
           height={60}
