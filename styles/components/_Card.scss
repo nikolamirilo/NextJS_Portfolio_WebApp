@@ -4,14 +4,14 @@
   gap: 0.5rem;
   background-color: #fafafa;
   width: 380px !important;
-  min-height: 320px;
+  min-height: 430px;
   height: fit-content;
   border-radius: 10px;
   padding-bottom: 0.5rem;
   @include boxShadow;
   cursor: pointer;
   .card-image {
-    @include backgroundObjectImage(100%, 200px);
+    @include backgroundObjectImage(100%, 250px);
     position: relative;
     border-radius: 10px;
     img {

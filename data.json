@@ -3,14 +3,14 @@
     {
       "id": "1",
       "title": "DVA",
-      "description": "Managing implementation of Adinsure 3x software for German Insurance broker company DVA. Coordinating QA, BA, and development teams in order to fullfill requirements from client..",
+      "description": "Managing implementation of Adinsure 3x software for German Insurance broker company DVA. Coordinating QA, BA, and development teams in order to fullfill requirements from client.",
       "link": "https://www.adacta-fintech.com/news/dva-going-digital-with-adacta",
       "image": "/images/projects/DVA.png"
     },
     {
       "id": "2",
       "title": "Signal Iduna",
-      "description": "Managing implementation of Adinsure 3x software for German Insurance company Signal Iduna. Coordinating QA, BA, and development teams in order to fullfill requirements from client..",
+      "description": "Managing implementation of Adinsure 3x software for German Insurance company Signal Iduna. Coordinating QA, BA, and development teams in order to fullfill requirements from client.",
       "link": "https://www.adacta-fintech.com/news/signal-iduna-turn-to-adinsure-to-transform-their-processes",
       "image": "/images/projects/Signal.png"
     },
@@ -26,14 +26,14 @@
       "title": "Swapabee",
       "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
       "link": "https://swapabee.ch/",
-      "image": "/images/projects/swapabee.webp"
+      "image": "https://is4-ssl.mzstatic.com/image/thumb/Purple114/v4/e0/ef/9d/e0ef9d72-29b8-9091-e1c4-a1510d822349/source/512x512bb.jpg"
     },
     {
       "id": "5",
       "title": "We Buy in Dubai",
       "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
-      "link": "https://webuyindubai.com/",
-      "image": "/images/projects/webuyindubai.webp"
+      "link": "https://webuyindubai.com",
+      "image": "https://webuyindubai.com/assets/WeBuyInDubai-b9819f01.webp"
     },
     {
       "id": "6",
@@ -41,6 +41,27 @@
       "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
       "link": "",
       "image": "/images/projects/ariosoinvestment.webp"
+    },
+    {
+      "id": "7",
+      "title": "Ultra Team S",
+      "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
+      "link": "",
+      "image": "https://www.ultra-tim-s.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.009f53d7.webp&w=1080&q=75"
+    },
+    {
+      "id": "8",
+      "title": "Claire Beauty",
+      "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
+      "link": "",
+      "image": "https://beautybyclaire.rs/wp-content/uploads/2023/12/8U0A3923-1-1240x827.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Montre Shop",
+      "description": "Worked on building full-stack progressive web app using React.JS, Redux and Sass.",
+      "link": "",
+      "image": "https://instagram.fbeg2-1.fna.fbcdn.net/v/t51.2885-19/404910327_878534300246370_8080588599173296489_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.fbeg2-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=T28A3dM_iRwAX869Xm_&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfBOUWhlVLDv13F8EkuWhMcZY0Mcvc2P87lRyQLkDZiWxw&oe=65A3E5F2&_nc_sid=8b3546"
     }
   ],
   "services": [

@@ -88,11 +88,14 @@
 }
 @mixin cardsContainerStyle {
   @include contentPadding;
-  @include flex(row, space-around, center);
+  @include flex(row, center, center);
   gap: 1.5%;
   flex-wrap: wrap;
   width: 100%;
   row-gap: 5vh;
+  @include media($xs) {
+    width: 96%;
+  }
 }
 
 @keyframes fade {
