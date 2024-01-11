@@ -5,6 +5,7 @@ import { Card } from "components";
 const Portfolio = () => {
   return (
     <div id="portfolio">
+      <h1>Portfolio</h1>
       <div className="cards-container">
         {data.projects.map((project, idx) => {
           return (

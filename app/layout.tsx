@@ -1,9 +1,8 @@
 import { Open_Sans } from "next/font/google";
 import "../styles/index.scss";
-import { Footer, Navbar } from "components";
 import { Metadata } from "next";
 
-const font = Open_Sans({ subsets: ["latin"] });
+const font = Open_Sans({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Nikola Mirilo",
