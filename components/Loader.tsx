@@ -1,10 +1,8 @@
 import React from "react";
-import { Dna } from "react-loader-spinner";
 
 const Loader: React.FC = () => {
   return (
     <div
-      className="loader"
       style={{
         width: "100%",
         height: "100vh",
@@ -17,14 +15,7 @@ const Loader: React.FC = () => {
         zIndex: "1000",
       }}
     >
-      <Dna
-        visible={true}
-        height="120"
-        width="120"
-        ariaLabel="dna-loading"
-        wrapperStyle={{}}
-        wrapperClass="dna-wrapper"
-      />
+      <div className="loader"></div>
     </div>
   );
 };
