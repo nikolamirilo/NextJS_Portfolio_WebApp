@@ -8,6 +8,7 @@ const Hero: React.FC = () => {
       <Image
         src="/images/office.webp"
         fill
+        priority={true}
         alt="office"
         className="hero-image"
       />
