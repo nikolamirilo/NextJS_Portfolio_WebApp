@@ -127,6 +127,12 @@
       "title": "Introduction to Agile in IT",
       "description": "Issued on April 2022. by company SAP Fioneer.",
       "image": "/images/education/agile.jpg"
+    },
+    {
+      "id": "5",
+      "title": "German A1 Level Certificate",
+      "description": "Issued on July 2023. by Equlibrio School.",
+      "image": "/images/education/equilibrio.png"
     }
   ],
   "nodes": [
