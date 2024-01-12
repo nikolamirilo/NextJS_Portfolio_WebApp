@@ -12,7 +12,7 @@
       @include flex(column, center, center);
     }
   }
-  .content {
+  .node-content {
     width: 25rem;
     display: flex;
     flex-direction: column;
@@ -38,10 +38,15 @@
     }
   }
 
-  .image {
+  .node-image {
     margin-top: 1rem;
     @include backgroundObjectImage(12rem, 12rem);
-    border-radius: 100%;
-    border: 2px solid $secondary;
+    position: relative;
+    img {
+      object-fit: cover;
+      object-position: center;
+      border-radius: 100%;
+      border: 2px solid $secondary;
+    }
   }
 }
