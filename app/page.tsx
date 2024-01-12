@@ -8,10 +8,19 @@ import {
   Portfolio,
   About,
 } from "sections";
-import React from "react";
-import { Footer, Navbar } from "components";
+import React, { useEffect, useState } from "react";
+import { Footer, Loader, Navbar } from "components";
 
 const Home = () => {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setLoading(false);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+  if (loading) return <Loader />;
   return (
     <>
       <Navbar />
