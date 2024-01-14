@@ -28,6 +28,7 @@
     @include media($md) {
       @include flex(column, flex-start, center);
       width: 100%;
+      bottom: 8vh;
     }
     h1 {
       font-size: 3rem;
