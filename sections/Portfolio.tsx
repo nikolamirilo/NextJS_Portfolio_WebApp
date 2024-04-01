@@ -6,7 +6,7 @@ const Portfolio = () => {
   return (
     <div id="portfolio">
       <h1>Portfolio</h1>
-      <div className="cards-container">
+      <div className="cards-container grid-container">
         {data.projects.map((project, idx) => {
           return (
             <Card

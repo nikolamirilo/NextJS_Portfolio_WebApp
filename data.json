@@ -74,13 +74,13 @@
   "services": [
     {
       "id": "1",
-      "title": "Web Development",
-      "description": "Providing services of buliding full-stack web application and courses of learining them."
+      "title": "Project Management",
+      "description": "Providing services of coordinating work of developers and testers in order to build progressive web or mobile applications."
     },
     {
       "id": "2",
-      "title": "Project Management",
-      "description": "Providing services of coordinating work of developers and testers in order to build progressive web or mobile applications."
+      "title": "Web Development",
+      "description": "Providing services of buliding full-stack web application and courses of learining them."
     },
     {
       "id": "3",

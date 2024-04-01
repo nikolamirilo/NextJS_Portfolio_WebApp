@@ -37,7 +37,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="skills">
+    <section id="skills" className="skills-grid-container">
       {data?.skills?.map((skill, idx) => {
         return (
           <div key={idx} ref={targetRef}>
