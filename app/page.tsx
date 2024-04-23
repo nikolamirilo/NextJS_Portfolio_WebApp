@@ -4,7 +4,6 @@ import {
   Services,
   Timeline,
   Education,
-  Skills,
   Portfolio,
   About,
 } from "sections";
@@ -31,7 +30,6 @@ const Home = () => {
         <Services />
         <Portfolio />
         <Education />
-        <Skills />
       </main>
       <Footer />
     </>
