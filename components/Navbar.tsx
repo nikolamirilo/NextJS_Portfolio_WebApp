@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
         <a onClick={handleNavbar} href="#education">
           Education
         </a>
-        <a onClick={handleNavbar} href="mailto:nikolamirilo.com">
+        <a onClick={handleNavbar} href="mailto:nikolamirilo@gmail.com">
           Contact me
         </a>
       </div>
