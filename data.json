@@ -174,7 +174,7 @@
     {
       "title": "Freelancing as Reactify Solutions",
       "date": "January 2022.",
-      "description": "Developing web applications for multiple companies according to their requirements. Mostly using stack: Next.js, TailwindCSS, MongoDB, Clerk, and Cloudinary.",
+      "description": "Developing web applications for multiple companies according to their requirements. Mostly using stack: Next.js, TailwindCSS, MongoDB, Postgres, Clerk, and Cloudinary.",
       "image": "/images/about/next.png",
       "imageName": "Next.js"
     },
