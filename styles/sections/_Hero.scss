@@ -1,6 +1,6 @@
 #hero {
   width: 100%;
-  height: 92vh;
+  height: 100vh;
   color: $white;
   @include contentPadding;
   @include flex(row, flex-start, center);
@@ -18,7 +18,7 @@
   }
   .hero-content {
     position: relative;
-    bottom: 5vh;
+    bottom: 6vh;
     @include flex(column, center, center);
     width: 40%;
     gap: 2vh;
