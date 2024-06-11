@@ -118,18 +118,24 @@
     },
     {
       "id": "3",
+      "title": "Professional Scrum Master I (PSM I)",
+      "description": "Issued on June 2024. by Scrum.org.",
+      "image": "/images/education/psm.png"
+    },
+    {
+      "id": "4",
       "title": "Lean Specialist Yellow Belt",
       "description": "Issued on December 2023. by Management Center Belgrade (MCB).",
       "image": "/images/education/lean.png"
     },
     {
-      "id": "4",
+      "id": "5",
       "title": "Introduction to Agile in IT",
       "description": "Issued on April 2022. by company SAP Fioneer.",
       "image": "/images/education/agile.jpg"
     },
     {
-      "id": "5",
+      "id": "6",
       "title": "German A1 Level Certificate",
       "description": "Issued on July 2023. by Equlibrio School.",
       "image": "/images/education/equilibrio.png"
