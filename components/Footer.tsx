@@ -8,7 +8,10 @@ const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <div className="left-content">
-        <Image src="/LogoTransparent.png" alt="Logo" width={80} height={80} />
+        <Image src="/logo-transparent.png" alt="Logo"
+          width={80}
+          height={60}
+          style={{ margin: "1vh 0", width: "auto" }} />
       </div>
       <div className="middle-content">
         <div className="email">

@@ -11,11 +11,11 @@ const Navbar: React.FC = () => {
     <nav className="navbar">
       <div className="logo">
         <Image
-          src="/LogoTransparent.png"
+          src="/logo-transparent.png"
           alt="Logo"
-          width={60}
+          width={80}
           height={60}
-          style={{ margin: "1vh 0" }}
+          style={{  width: "auto" }}
         />
       </div>
       <input

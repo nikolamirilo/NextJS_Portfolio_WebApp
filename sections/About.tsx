@@ -52,8 +52,8 @@ const About = () => {
 
           <div className="about-text">
             <p>
-              IT Project Manager/Business Consultant in Adacta, DACH
-              delivery region. Specialized in the implementation of Scrum and
+              IT Project Manager in Adacta, DACH
+              delivery region. I am specialized in the implementation of Scrum and
               Agile methodologies in Software Development projects.
             </p>
             <p>

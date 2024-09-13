@@ -2,7 +2,6 @@
 import {
   Hero,
   Services,
-  Timeline,
   Education,
   Portfolio,
   About,
@@ -26,7 +25,6 @@ const Home = () => {
       <main className="home" style={{ position: "relative" }}>
         <Hero />
         <About />
-        <Timeline />
         <Services />
         <Portfolio />
         <Education />
