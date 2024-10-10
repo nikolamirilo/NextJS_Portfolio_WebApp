@@ -6,7 +6,7 @@
   @include flex(row, flex-start, center);
   position: relative;
   @include media($md) {
-    min-height: 80vh;
+    min-height: 70vh;
     height: fit-content;
     @include flex(row, center, flex-start);
     width: 100%;
