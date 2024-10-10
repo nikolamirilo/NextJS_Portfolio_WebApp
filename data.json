@@ -1,70 +1,66 @@
 {
   "projects": [
     {
-      "id": "1",
       "title": "DVA",
       "description": "Managed the implementation of Adinsure 3x software for the German insurance broker company DVA. Coordinated QA, BA, and development teams to fulfill client requirements.",
       "link": "https://www.adacta-fintech.com/news/dva-going-digital-with-adacta",
       "image": "/images/projects/DVA.png"
     },
     {
-      "id": "2",
       "title": "Signal Iduna",
       "description": "Oversaw the implementation of Adinsure 3x software for the German insurance company Signal Iduna. Coordinated QA, BA, and development teams to meet client requirements.",
       "link": "https://www.adacta-fintech.com/news/signal-iduna-turn-to-adinsure-to-transform-their-processes",
       "image": "/images/projects/Signal_Iduna.png"
     },
     {
-      "id": "3",
       "title": "Reactify Solutions",
       "description": "IT services company specializing in web development. Visit our LinkedIn page for updates.",
-      "link": "https://www.linkedin.com/company/90915935/admin/feed/posts/",
+      "link": "https://www.reactify-solutions.com/",
       "image": "/images/projects/Reactify_Solutions.png"
     },
     {
-      "id": "4",
-      "title": "Swapabee",
-      "description": "Contributed to the development of a social network and mobile app for the Swiss-British company using React.JS, Redux, and Sass.",
-      "link": "https://play.google.com/store/apps/details?id=com.swapabee_20&hl=en_US&pli=1",
-      "image": "/images/projects/Swapabee.jpg"
-    },
-    {
-      "id": "5",
-      "title": "We Buy in Dubai",
-      "description": "Developed a portfolio website for a Serbian luxury watch seller in Dubai using React.js, Sass, and ResendAPI.",
-      "link": "https://webuyindubai.com",
-      "image": "/images/projects/WeBuyInDubai.png"
-    },
-    {
-      "id": "6",
-      "title": "Arioso Investment AG",
-      "description": "Worked on building a portfolio website for a German Real Estate company using React.js, Sass, and ResendAPI.",
-      "link": "https://arioso-investment-ag.netlify.app/",
-      "image": "/images/projects/Arioso_Investment.png"
-    },
-    {
-      "id": "7",
-      "title": "Ultra Team S",
-      "description": "Developed a portfolio website for a Serbian premium moving company using React.js and Sass.",
-      "link": "https://www.ultra-tim-s.com/",
-      "image": "/images/projects/Ultra_Team_S.png"
-    },
-    {
-      "id": "8",
-      "title": "Claire Beauty",
-      "description": "Worked on building a portfolio website for the beauty salon Claire using Wordpress CMS.",
-      "link": "https://beautybyclaire.rs/",
-      "image": "/images/projects/Claire.png"
-    },
-    {
-      "id": "9",
       "title": "Montre Shop",
       "description": "Developed an E-Commerce web app for personal business using Next.js, Tailwind, MongoDB, ResendAPI, Clerk, and Cloudinary.",
       "link": "https://www.montre-shop.com/",
       "image": "/images/projects/Montre.png"
     },
     {
-      "id": "10",
+      "title": "Minexa AI",
+      "description": "Managing the development of Minexa AI product, overseeing technical documentation, and maintaining a Wix website.",
+      "link": "https://minexa.ai",
+      "image": "/images/projects/minexa.png"
+    },
+    {
+      "title": "Claire Beauty",
+      "description": "Worked on building a portfolio website for the beauty salon Claire using Wordpress CMS.",
+      "link": "https://beautybyclaire.rs/",
+      "image": "/images/projects/Claire.png"
+    },
+    {
+      "title": "Swapabee",
+      "description": "Contributed to the development of a social network and mobile app for the Swiss-British company using React.JS, Redux, and Sass.",
+      "link": "https://play.google.com/store/apps/details?id=com.swapabee_20&hl=en_US&pli=1",
+      "image": "/images/projects/Swapabee.jpg"
+    },
+    {
+      "title": "We Buy in Dubai",
+      "description": "Developed a portfolio website for a Serbian luxury watch seller in Dubai using React.js, Sass, and ResendAPI.",
+      "link": "https://webuyindubai.com",
+      "image": "/images/projects/WeBuyInDubai.png"
+    },
+    {
+      "title": "Arioso Investment AG",
+      "description": "Worked on building a portfolio website for a German Real Estate company using React.js, Sass, and ResendAPI.",
+      "link": "https://arioso-investment-ag.netlify.app/",
+      "image": "/images/projects/Arioso_Investment.png"
+    },
+    {
+      "title": "Ultra Team S",
+      "description": "Developed a portfolio website for a Serbian premium moving company using React.js and Sass.",
+      "link": "https://www.ultra-tim-s.com/",
+      "image": "/images/projects/Ultra_Team_S.png"
+    },
+    {
       "title": "Companies to Students (C2S)",
       "description": "Contributed to development of official event website using HTML, CSS, JQUERY, and Javascript.",
       "link": "https://c2s.fonis.rs/2021/",
@@ -73,69 +69,57 @@
   ],
   "services": [
     {
-      "id": "1",
       "title": "Project Management",
       "description": "Providing services of coordinating work of developers and testers in order to build progressive web or mobile applications."
     },
     {
-      "id": "2",
       "title": "Web Development",
       "description": "Providing services of buliding full-stack web application and courses of learining them."
     },
     {
-      "id": "3",
       "title": "Consulting",
       "description": "Providing consulting services in area of Project Management, Scrum and Process Optimization to IT industry projects."
     },
     {
-      "id": "4",
       "title": "Process optimization",
       "description": "Providing services of analyzing, measuring, optimizing and monitoring processes."
     },
     {
-      "id": "5",
       "title": "Sharing IT Expertise",
       "description": "Sistematic lectures with practical exercises and mini projects using the newest technologies."
     },
     {
-      "id": "6",
       "title": "Search Engine Optimization",
       "description": "Providing services of Search Engine Optimization using Semrush and tehcnical SEO tehcniques."
     }
   ],
   "education": [
     {
-      "id": "1",
       "title": "Engineer of organizational sciences",
       "description": "Bachelor degree in Operational Management at University of Belgrade, Faculty of Organizational Sciences (FOS).",
       "image": "/images/education/fon.jpg"
     },
     {
-      "id": "2",
       "title": "Certified Associate in Project Management (CAPM)®",
       "description": "Certification Number: 3450755. Issued on April 2023.",
       "image": "/images/education/capm.png"
     },
     {
-      "id": "3",
       "title": "Professional Scrum Master I (PSM I)",
       "description": "Issued on June 2024. by Scrum.org.",
       "image": "/images/education/psm.png"
     },
     {
-      "id": "4",
       "title": "Lean Specialist Yellow Belt",
       "description": "Issued on December 2023. by Management Center Belgrade (MCB).",
       "image": "/images/education/lean.png"
     },
     {
-      "id": "5",
       "title": "Introduction to Agile in IT",
       "description": "Issued on April 2022. by company SAP Fioneer.",
       "image": "/images/education/agile.jpg"
     },
     {
-      "id": "6",
       "title": "German A1 Level Certificate",
       "description": "Issued on July 2023. by Equlibrio School.",
       "image": "/images/education/equilibrio.png"

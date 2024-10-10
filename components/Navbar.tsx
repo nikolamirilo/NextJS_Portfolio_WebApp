@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
           alt="Logo"
           width={80}
           height={60}
-          style={{  width: "auto" }}
+          style={{  width: "auto", marginTop: "2px" }}
         />
       </div>
       <input
@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
       </label>
       <div className="links">
         <a onClick={handleNavbar} href="#about">
-          About me
+          About
         </a>
         <a onClick={handleNavbar} href="#services">
           Services
@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
           Education
         </a>
         <a onClick={handleNavbar} href="mailto:nikolamirilo@gmail.com">
-          Contact me
+          Contact
         </a>
       </div>
     </nav>

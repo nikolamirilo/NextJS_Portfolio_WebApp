@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const Hero: React.FC = () => {
+  const [isHovered, setIsHovered] = useState(false)
   return (
     <section id="hero">
       <Image
@@ -21,8 +22,12 @@ const Hero: React.FC = () => {
           through programming.
         </h2>
         <div className="hero-buttons">
-          <Link href="#services">Services</Link>
-          <Link href="#portfolio">Portfolio</Link>
+          <Link href="#services" style={{background: !isHovered ? "#f4a950" : "transparent"}} onMouseOver={()=>{
+            setIsHovered(!isHovered)
+          }}>Services</Link>
+          <Link href="#portfolio" style={{background: isHovered ? "#f4a950" : "transparent"}} onMouseOver={()=>{
+            setIsHovered(!isHovered)
+          }}>Portfolio</Link>
         </div>
       </div>
     </section>

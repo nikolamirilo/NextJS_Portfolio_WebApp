@@ -19,8 +19,8 @@
   .hero-content {
     position: relative;
     bottom: 6vh;
-    @include flex(column, center, center);
-    width: 40%;
+    @include flex(column, flex-start, flex-start);
+    width: 45%;
     gap: 2vh;
     @include media($lg) {
       width: 50%;
@@ -32,21 +32,19 @@
     }
     h1 {
       font-size: 3rem;
-      text-align: center;
-      width: 100%;
       @include media($xxs) {
         font-size: 1.8rem;
+        text-align: center;
         margin-top: 5vh;
         width: 100%;
       }
     }
     h2 {
       font-size: $linkFS;
-      width: 80%;
-      text-align: center;
       font-weight: 500;
       @include media($xxs) {
         font-size: 1.2rem;
+        text-align: center;
         width: 90%;
       }
     }
@@ -62,20 +60,8 @@
         text-decoration: none;
         padding: 0.6rem 3rem;
         color: $white;
-        border: none;
-        &:first-child {
-          &:hover {
-            background-color: transparent;
-            border: 1px solid $secondary;
-          }
-        }
-        &:last-child {
-          background-color: transparent;
-          border: 1px solid $secondary;
-          &:hover {
-            background-color: $secondary;
-          }
-        }
+        background-color: transparent;
+        border: 1px solid $secondary;
       }
     }
   }
