@@ -20,7 +20,7 @@
       @include flex(column, center, center);
       gap: 0.5vh;
       a {
-        color: $secondary;
+        color: $white;
         font-size: $linkFS;
       }
       label {

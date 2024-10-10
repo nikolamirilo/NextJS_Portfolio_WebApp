@@ -11,7 +11,7 @@ const Loader: React.FC = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        background: "#001f3f",
+        background: "#001f",
         zIndex: "1000",
       }}
     >

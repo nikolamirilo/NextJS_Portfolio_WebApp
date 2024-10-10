@@ -40,6 +40,10 @@ body {
   background: $secondary;
 }
 
+.bg-secondary{
+  background-color: $secondary !important;
+}
+
 .loader {
   width: 80px;
   aspect-ratio: 1;

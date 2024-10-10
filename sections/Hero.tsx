@@ -22,10 +22,10 @@ const Hero: React.FC = () => {
           through programming.
         </h2>
         <div className="hero-buttons">
-          <Link href="#services" style={{background: !isHovered ? "#f4a950" : "transparent"}} onMouseOver={()=>{
+          <Link href="#services" className={!isHovered ? "bg-secondary" : ""} onMouseOver={()=>{
             setIsHovered(!isHovered)
           }}>Services</Link>
-          <Link href="#portfolio" style={{background: isHovered ? "#f4a950" : "transparent"}} onMouseOver={()=>{
+          <Link href="#portfolio" className={isHovered ? "bg-secondary" : ""} onMouseOver={()=>{
             setIsHovered(!isHovered)
           }}>Portfolio</Link>
         </div>
