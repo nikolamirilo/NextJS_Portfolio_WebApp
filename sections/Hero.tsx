@@ -14,7 +14,10 @@ const Hero: React.FC = () => {
         className="hero-image"
       />
       <div className="hero-content">
-        <h1>Empowering IT projects and professionals to success</h1>
+        <h1>
+          <span className="color-secondary">Empowering</span> IT projects and
+          professionals to <span className="color-secondary">success</span>
+        </h1>
         <h2>
           Utilizing my skills in project management and programming to drive
           successful results by effective planning and executing projects,

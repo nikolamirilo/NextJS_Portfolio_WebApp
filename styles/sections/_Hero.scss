@@ -59,8 +59,7 @@
       a {
         @include buttonStyle;
         text-decoration: none;
-        padding: 0.5rem 2rem;
-        min-width: 10rem;
+        min-width: 8rem;
         color: $white;
         background-color: transparent;
         border: 2px solid $secondary;

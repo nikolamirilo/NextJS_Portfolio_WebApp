@@ -1,8 +1,9 @@
-import { Open_Sans } from "next/font/google";
+import { Cormorant_SC, Open_Sans } from "next/font/google";
 import "../styles/index.scss";
 import { Metadata } from "next";
+import { mulish } from "../fonts";
 
-const font = Open_Sans({ weight: "400", subsets: ["latin"] });
+const font = mulish;
 
 export const metadata: Metadata = {
   title: "Nikola Mirilo",

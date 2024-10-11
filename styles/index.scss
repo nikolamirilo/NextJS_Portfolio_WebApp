@@ -40,8 +40,12 @@ body {
   background: $secondary;
 }
 
-.bg-secondary{
+.bg-secondary {
   background-color: $secondary !important;
+}
+.color-secondary {
+  color: $secondary;
+  font-weight: bold;
 }
 
 .loader {
