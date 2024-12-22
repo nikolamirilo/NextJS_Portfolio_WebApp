@@ -16,8 +16,8 @@ const About = () => {
                 </div>
               </div>
               <h2>Nikola Mirilo</h2>
-              <h3>Project Manager</h3> <br />
-              <h3>Full Stack Web Developer</h3>
+              <h3>IT Project Manager</h3> <br />
+              <h3>Full Stack Developer</h3>
             </div>
             <div className="icons">
               <li>
@@ -52,18 +52,10 @@ const About = () => {
 
           <div className="about-text">
             <p>
-              IT Project Manager in Adacta, DACH
-              delivery region. I am specialized in the implementation of Scrum and
-              Agile methodologies in Software Development projects.
+              IT Project Manager specialized in implementing Agile and Lean methodologies in software development projects, ensuring on-time delivery within budget and agreed scope.
             </p>
             <p>
-              Beyond my project management role, I am a passionate Full-stack
-              Web Developer dedicated to crafting websites that boast
-              exceptional design, a comprehensive set of functionalities, and
-              seamless integration with various systems. I am driven by a
-              commitment to staying at the forefront of technological
-              advancements while consistently delivering innovative and
-              impactful solutions.
+              Passionate Full-Stack Developer dedicated to building systems with exceptional design and seamless functionality. Driven by a commitment to staying ahead of technological advancements, I strive to deliver innovative and impactful solutions that make a difference.
             </p>
           </div>
         </div>

@@ -20,12 +20,13 @@
 @mixin linkStyle {
   font-size: $linkFS;
   cursor: pointer;
-  transition: transform 0.1s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   text-decoration: none;
   color: $black;
   &:hover {
-    transform: scale(1.1);
-    text-decoration: none;
+    transform: scale(1.05);
+    color: $secondary;
+    border-bottom: 2px solid $secondary;
   }
 }
 @mixin pagePadding {
